@@ -6,12 +6,7 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[][] an = Solution.findContinuousSequence(15);
-        for (int i = 0; i < an.length; i++) {
-            for (int j = 0; j < an[i].length; j++)
-                System.out.print(an[i][j] + " ");
-            System.out.println();
-        }
+        System.out.println(Solution.verifyPostorder(new int[] {1, 6, 3, 2, 5}));
     }
 }
 
@@ -30,5 +25,18 @@ class Solution {
 
     public static int[][] findContinuousSequence(int target) {
         return new offer57q2().findContinuousSequence(target);
+    }
+
+    public static int cuttingRope(int n) {
+        System.out.println(new offer14q1().cuttingRope(n));
+        return new offer14q2().cuttingRope(n);
+    }
+
+    public static int hammingWeight(int n) {
+        return new offer15().hammingWeight(n);
+    }
+
+    public static boolean verifyPostorder(int[] postorder) {
+        return new offer33().verifyPostorder(postorder);
     }
 }
