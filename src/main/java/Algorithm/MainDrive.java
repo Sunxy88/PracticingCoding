@@ -1,12 +1,14 @@
 package Algorithm;
 
 import Algorithm.Solutions.FightForOffer.*;
+import Algorithm.Solutions.LeetCode.LeetCode42;
+import Algorithm.Solutions.LeetCode.LeetCode55;
 
 import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.verifyPostorder(new int[] {1, 6, 3, 2, 5}));
+        System.out.println(Solution.trap(new int[] {0,1,0,2,1,0,1,3,2,1,2,1}));
     }
 }
 
@@ -38,5 +40,29 @@ class Solution {
 
     public static boolean verifyPostorder(int[] postorder) {
         return new offer33().verifyPostorder(postorder);
+    }
+
+    public static int nthUglyNumber(int n) {
+        return new offer49().nthUglyNumber(n);
+    }
+
+    public static int add(int a, int b) {
+        return new offer65().add(a, b);
+    }
+
+    public static double[] twoSum(int n) {
+        return new offer60().twoSum(n);
+    }
+
+    public static int countDigitOne(int n) {
+        return new offer43().countDigitOne(n);
+    }
+
+    public static boolean canJump(int[] num) {
+        return new LeetCode55().canJump(num);
+    }
+
+    public static int trap(int[] height) {
+        return new LeetCode42().trap(height);
     }
 }
