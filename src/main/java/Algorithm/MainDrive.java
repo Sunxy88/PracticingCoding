@@ -1,14 +1,14 @@
 package Algorithm;
 
 import Algorithm.Solutions.FightForOffer.*;
-import Algorithm.Solutions.LeetCode.LeetCode42;
-import Algorithm.Solutions.LeetCode.LeetCode55;
+import Algorithm.Solutions.LeetCode.*;
 
+import java.util.List;
 import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.trap(new int[] {0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(Solution.minDistance("sea", "eat"));
     }
 }
 
@@ -64,5 +64,21 @@ class Solution {
 
     public static int trap(int[] height) {
         return new LeetCode42().trap(height);
+    }
+
+    public static List<List<String>> groupAnagrams(String[] strs) {
+        return new LeetCode49().groupAnagrams(strs);
+    }
+
+    public static int uniquePaths(int m, int n) {
+        return new LeetCode62().uniquePaths(m, n);
+    }
+
+    public static int minPathSum(int[][] grid) {
+        return new LeetCode64().minPathSum(grid);
+    }
+
+    public static int minDistance(String word1, String word2) {
+        return new LeetCode72().minDistance(word1, word2);
     }
 }
