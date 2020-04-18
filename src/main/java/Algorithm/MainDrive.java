@@ -8,11 +8,17 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minDistance("sea", "eat"));
+        int[] nums = new int[]{2,0,1};
+        Solution.sortColors(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
 
 class Solution {
+    public static void sortColors(int[] nums) {
+        new LeetCode75().sortColors(nums);
+    }
+
     public static String reverseLeftWords(String s, int n) {
         return new offer58q2().reverseLeftWords(s, n);
     }
@@ -80,5 +86,9 @@ class Solution {
 
     public static int minDistance(String word1, String word2) {
         return new LeetCode72().minDistance(word1, word2);
+    }
+
+    public static int maxArea(int[] height) {
+        return new LeetCode11().maxArea(height);
     }
 }
