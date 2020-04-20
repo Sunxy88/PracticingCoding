@@ -8,13 +8,31 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[] nums = new int[]{2,0,1};
-        Solution.sortColors(nums);
-        System.out.println(Arrays.toString(nums));
+        System.out.println(Solution.largestRectangleArea(new int[]{2,1,5,6,2,3}));
     }
 }
 
 class Solution {
+    public static int largestRectangleArea(int[] heights) {
+        return new LeetCode84().largestRectangleArea(heights);
+    }
+
+    public static int numberOfSubarrays(int[] nums, int k) {
+        return new LeetCode1248().numberOfSubarrays(nums, k);
+    }
+
+    public static boolean exist(char[][] board, String word) {
+        return new LeetCode79().exist(board, word);
+    }
+
+    public static int numIslands(char[][] grid) {
+        return new LeetCode200().numIslands(grid);
+    }
+
+    public static int getMaxRepetitions(String s1, int n1, String s2, int n2) {
+        return new LeetCode466().getMaxRepetitions(s1, n1, s2, n2);
+    }
+
     public static void sortColors(int[] nums) {
         new LeetCode75().sortColors(nums);
     }
