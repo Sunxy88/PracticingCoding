@@ -8,11 +8,19 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.largestRectangleArea(new int[]{2,1,5,6,2,3}));
+        System.out.println(Solution.numTrees(3));
     }
 }
 
 class Solution {
+    public static int numTrees(int n) {
+        return new LeetCode96().numTrees(n);
+    }
+
+    public static int maximalRectangle(char[][] matrix) {
+        return new LeetCode85().maximalRectangle(matrix);
+    }
+
     public static int largestRectangleArea(int[] heights) {
         return new LeetCode84().largestRectangleArea(heights);
     }
