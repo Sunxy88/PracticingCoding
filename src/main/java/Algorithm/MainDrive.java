@@ -2,17 +2,30 @@ package Algorithm;
 
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
+import Algorithm.Solutions.CodeInterview.*;
 
 import java.util.List;
 import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.numTrees(3));
+        System.out.println(Solution.maxProfit(new int[] {7,1,5,3,6,4}));
     }
 }
 
 class Solution {
+    public static int maxProfit(int[] prices) {
+        return new LeetCode121().maxProfit(prices);
+    }
+
+    public static int reversePairs(int[] nums) {
+        return new offer51().reversePairs(nums);
+    }
+
+    public static int waysToChange(int n) {
+        return new CodeInterview8Q11().waysToChange(n);
+    }
+
     public static int numTrees(int n) {
         return new LeetCode96().numTrees(n);
     }
