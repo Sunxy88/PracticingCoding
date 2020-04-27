@@ -9,11 +9,27 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxProfit(new int[] {7,1,5,3,6,4}));
+        System.out.println(Solution.search(new int[]{4,5,6,7,0,1,2}, 0));
     }
 }
 
 class Solution {
+    public static int search(int[] nums, int target) {
+        return new LeetCode33().search(nums, target);
+    }
+
+    public static int singleNumber(int[] nums) {
+        return new LeetCode136().singleNumber(nums);
+    }
+
+    public static int longestConsecutive(int[] nums) {
+        return new LeetCode128().longestConsecutive(nums);
+    }
+
+    public static List<List<Integer>> permute(int[] nums) {
+        return new LeetCode46().permute(nums);
+    }
+
     public static int maxProfit(int[] prices) {
         return new LeetCode121().maxProfit(prices);
     }
