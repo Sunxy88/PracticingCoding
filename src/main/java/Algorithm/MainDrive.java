@@ -9,11 +9,23 @@ import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.search(new int[]{4,5,6,7,0,1,2}, 0));
+        System.out.println(Solution.jump(new int[] {2,3,1,1, 4}));
     }
 }
 
 class Solution {
+    public static int jump(int[] nums) {
+        return new LeetCode45().jump(nums);
+    }
+
+    public static int majorityElement(int[] nums) {
+        return new LeetCode169().majorityElement(nums);
+    }
+
+    public static boolean isHappy(int n) {
+        return new LeetCode202().isHappy(n);
+    }
+
     public static int search(int[] nums, int target) {
         return new LeetCode33().search(nums, target);
     }
