@@ -3,17 +3,25 @@ package Algorithm;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
+import Algorithm.UsefulDataStructure.ListNode;
 
 import java.util.List;
-import java.util.Arrays;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.jump(new int[] {2,3,1,1, 4}));
+        System.out.println(Solution.rob(new int[] {2, 7, 9, 3, 1}));
     }
 }
 
 class Solution {
+    public static int rob(int[] nums) {
+        return new LeetCode198().rob(nums);
+    }
+
+    public static int maxProduct(int[] nums) {
+        return new LeetCode152().maxProduct(nums);
+    }
+
     public static int jump(int[] nums) {
         return new LeetCode45().jump(nums);
     }
