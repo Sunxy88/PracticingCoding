@@ -9,11 +9,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.rob(new int[] {2, 7, 9, 3, 1}));
+        System.out.println(Solution.simplifyPath("/a//b////c/d//././/.."));
     }
 }
 
 class Solution {
+    public static String simplifyPath(String path) {
+        return new LeetCode71().simplifyPath(path);
+    }
+
+    public static int mincostTickets(int[] days, int[] costs) {
+        return new LeetCode983().mincostTickets(days, costs);
+    }
+
     public static int rob(int[] nums) {
         return new LeetCode198().rob(nums);
     }
