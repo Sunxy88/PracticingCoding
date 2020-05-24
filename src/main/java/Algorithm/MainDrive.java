@@ -9,11 +9,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.simplifyPath("/a//b////c/d//././/.."));
+        System.out.println(Solution.calculate("1 * (2 + 3) * 4"));
     }
 }
 
 class Solution {
+    public static int calculate(String s) {
+        return new LeetCode224().calculate(s);
+    }
+
+    public static int evalRPN(String[] tokens) {
+        return new LeetCode150().evalRPN(tokens);
+    }
+
     public static String simplifyPath(String path) {
         return new LeetCode71().simplifyPath(path);
     }
