@@ -9,11 +9,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.calculate("1 * (2 + 3) * 4"));
+        System.out.println(Solution.findKthLargest(new int[] {3,2,1,5,6,4}, 2));
     }
 }
 
 class Solution {
+    public static int findKthLargest(int[] nums, int k) {
+        return new LeetCode215().findKthLargest(nums, k);
+    }
+
+    public static int findDuplicate(int[] nums) {
+        return new LeetCode287().findDuplicate(nums);
+    }
+
     public static int calculate(String s) {
         return new LeetCode224().calculate(s);
     }
