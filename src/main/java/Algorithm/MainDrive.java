@@ -5,15 +5,24 @@ import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.UsefulDataStructure.ListNode;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findKthLargest(new int[] {3,2,1,5,6,4}, 2));
+        System.out.println(Arrays.toString(Solution.maxSlidingWindow(new int[] {1,3,-1,-3,5,3,6,7}, 3)));
     }
 }
 
 class Solution {
+    public static int[] maxSlidingWindow(int[] nums, int k) {
+        return new LeetCode239().maxSlidingWindow(nums, k);
+    }
+
+    public static String decodeString(String s) {
+        return new LeetCode394().decodeString(s);
+    }
+
     public static int findKthLargest(int[] nums, int k) {
         return new LeetCode215().findKthLargest(nums, k);
     }
