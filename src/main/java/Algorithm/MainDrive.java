@@ -10,11 +10,23 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.maxSlidingWindow(new int[] {1,3,-1,-3,5,3,6,7}, 3)));
+        System.out.println(Solution.maxProfit(new int[] {7,1,5,3,6,4}));
     }
 }
 
 class Solution {
+    public static int maxProfit(int[] prices) {
+        return new LeetCode122().maxProfit(prices);
+    }
+
+    public static int nthUglyNumber(int n) {
+        return new LeetCode264().nthUglyNumber(n);
+    }
+
+    public static boolean isUgly(int num) {
+        return new LeetCode263().isUgly(num);
+    }
+
     public static int[] maxSlidingWindow(int[] nums, int k) {
         return new LeetCode239().maxSlidingWindow(nums, k);
     }
@@ -83,9 +95,9 @@ class Solution {
         return new LeetCode46().permute(nums);
     }
 
-    public static int maxProfit(int[] prices) {
-        return new LeetCode121().maxProfit(prices);
-    }
+//    public static int maxProfit(int[] prices) {
+//        return new LeetCode121().maxProfit(prices);
+//    }
 
     public static int reversePairs(int[] nums) {
         return new offer51().reversePairs(nums);
@@ -156,9 +168,9 @@ class Solution {
         return new offer33().verifyPostorder(postorder);
     }
 
-    public static int nthUglyNumber(int n) {
-        return new offer49().nthUglyNumber(n);
-    }
+//    public static int nthUglyNumber(int n) {
+//        return new offer49().nthUglyNumber(n);
+//    }
 
     public static int add(int a, int b) {
         return new offer65().add(a, b);
