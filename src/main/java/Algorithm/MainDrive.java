@@ -10,11 +10,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxProfit(new int[] {7,1,5,3,6,4}));
+        System.out.println(Arrays.toString(Solution.topKFrequent(new int[]{1}, 1)));
     }
 }
 
 class Solution {
+    public static int[] topKFrequent(int[] nums, int k) {
+        return new LeetCode347().topKFrequent(nums, k);
+    }
+
+    public static int nthSuperUglyNumber(int n, int[] primes) {
+        return new LeetCode313().nthSuperUglyNumber(n, primes);
+    }
+
     public static int maxProfit(int[] prices) {
         return new LeetCode122().maxProfit(prices);
     }
