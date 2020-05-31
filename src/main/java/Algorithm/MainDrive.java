@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.kSmallestPairs(new int[] {1, 7, 11}, new int[] {2, 4, 6}, 3));
+        System.out.println(Solution.kidsWithCandies(new int[] {2, 3, 5, 1, 3}, 3));
     }
 }
 
 class Solution {
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        return new LeetCode1431().kidsWithCandies(candies, extraCandies);
+    }
+
     public static List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         return new LeetCode373().kSmallestPairs(nums1, nums2, k);
     }
