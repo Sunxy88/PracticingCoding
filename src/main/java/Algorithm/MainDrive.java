@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.kidsWithCandies(new int[] {2, 3, 5, 1, 3}, 3));
+        System.out.println(Arrays.toString(Solution.productExceptSelf(new int[] {1, 2, 3, 4})));
     }
 }
 
 class Solution {
+    public static int[] productExceptSelf(int[] nums) {
+        return new LeetCode238().productExceptSelf(nums);
+    }
+
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         return new LeetCode1431().kidsWithCandies(candies, extraCandies);
     }
