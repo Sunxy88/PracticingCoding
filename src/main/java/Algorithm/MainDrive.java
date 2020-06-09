@@ -10,11 +10,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.canCompleteCircuit(new int[] {5, 8, 2, 8}, new int[] {6, 5, 6, 6}));
+        System.out.println(Solution.candy(new int[] {1, 2, 2}));
     }
 }
 
 class Solution {
+    public static int candy(int[] ratings) {
+        return new LeetCode135().candy(ratings);
+    }
+
+    public static boolean isPalindrome(int x) {
+        return new LeetCode9().isPalindrome(x);
+    }
+
     public static int canCompleteCircuit(int[] gas, int[] cost) {
         return new LeetCode134().canCompleteCircuit(gas, cost);
     }
