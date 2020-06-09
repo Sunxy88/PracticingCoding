@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.candy(new int[] {1, 2, 2}));
+        System.out.println(Solution.isSubsequence("axc", "ahbgdc"));
     }
 }
 
 class Solution {
+    public static boolean isSubsequence(String s, String t) {
+        return new LeetCode392().isSubsequence(s, t);
+    }
+
     public static int candy(int[] ratings) {
         return new LeetCode135().candy(ratings);
     }
