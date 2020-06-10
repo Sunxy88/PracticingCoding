@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isSubsequence("axc", "ahbgdc"));
+        System.out.println(Arrays.toString(Solution.dailyTemperatures(new int[] {73, 74, 75, 71, 69, 72, 76, 73})));
     }
 }
 
 class Solution {
+    public static int[] dailyTemperatures(int[] T) {
+        return new LeetCode739().dailyTemperatures(T);
+    }
+
     public static boolean isSubsequence(String s, String t) {
         return new LeetCode392().isSubsequence(s, t);
     }
