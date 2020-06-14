@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.dailyTemperatures(new int[] {73, 74, 75, 71, 69, 72, 76, 73})));
+        System.out.println(Solution.findBestValue(new int[] {1547,83230,57084,93444,70879}, 71237));
     }
 }
 
 class Solution {
+    public static int findBestValue(int[] arr, int target) {
+        return new LeetCode1300().findBestValue(arr, target);
+    }
+
     public static int[] dailyTemperatures(int[] T) {
         return new LeetCode739().dailyTemperatures(T);
     }
