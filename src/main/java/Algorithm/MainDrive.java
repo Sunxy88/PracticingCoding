@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findBestValue(new int[] {1547,83230,57084,93444,70879}, 71237));
+        System.out.println(Solution.longestCommonPrefix(new String[] {"baaaaa","aaaabb","aaaaaaaaa"}));
     }
 }
 
 class Solution {
+    public static String longestCommonPrefix(String[] strs) {
+        return new LeetCode14().longestCommonPrefix(strs);
+    }
+
     public static int findBestValue(int[] arr, int target) {
         return new LeetCode1300().findBestValue(arr, target);
     }
