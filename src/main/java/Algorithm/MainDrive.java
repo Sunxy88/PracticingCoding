@@ -10,11 +10,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.longestCommonPrefix(new String[] {"baaaaa","aaaabb","aaaaaaaaa"}));
+        System.out.println(Solution.minPatches(new int[] {1, 3}, 6));
     }
 }
 
 class Solution {
+    public static int minPatches(int[] nums, int n) {
+        return new LeetCode330().minPatches(nums, n);
+    }
+
     public static String longestCommonPrefix(String[] strs) {
         return new LeetCode14().longestCommonPrefix(strs);
     }
