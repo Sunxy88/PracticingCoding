@@ -10,11 +10,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minPatches(new int[] {1, 3}, 6));
+        System.out.println(Solution.removeElement(new int[] {0,1,2,2,3,0,4,2}, 2));
     }
 }
 
 class Solution {
+    public static int removeElement(int[] nums, int val) {
+        return new LeetCode27().removeElement(nums, val);
+    }
+
+    public static boolean isPalindrome(String s) {
+        return new LeetCode125().isPalindrome(s);
+    }
+
     public static int minPatches(int[] nums, int n) {
         return new LeetCode330().minPatches(nums, n);
     }
