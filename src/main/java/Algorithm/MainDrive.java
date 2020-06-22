@@ -1,5 +1,6 @@
 package Algorithm;
 
+import Algorithm.Solutions.CrackingTheCodeInterview.Question1618;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
@@ -10,11 +11,23 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isMatch("aa", "a*"));
+        System.out.println(Solution.patternMatching("aaaa", "dogcatcatdog"));
     }
 }
 
 class Solution {
+    public static boolean patternMatching(String pattern, String value) {
+        return new Question1618().patternMatching(pattern, value);
+    }
+
+    public static String removeDuplicateLetters(String s) {
+        return new LeetCode316().removeDuplicateLetters(s);
+    }
+
+    public static int removeDuplicates(int[] nums) {
+        return new LeetCode26().removeDuplicates(nums);
+    }
+
     public static boolean isMatch(String s, String p) {
         return new LeetCode10().isMatch(s, p);
     }
