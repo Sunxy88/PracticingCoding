@@ -11,11 +11,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.patternMatching("aaaa", "dogcatcatdog"));
+        System.out.println(Solution.firstMissingPositive(new int[] {1, 2, 0}));
     }
 }
 
 class Solution {
+    public static int firstMissingPositive(int[] nums) {
+        return new LeetCode41().firstMissingPositive(nums);
+    }
+
+    public static int threeSumClosest(int[] nums, int target) {
+        return new LeetCode16().threeSumClosest(nums, target);
+    }
+
     public static boolean patternMatching(String pattern, String value) {
         return new Question1618().patternMatching(pattern, value);
     }
