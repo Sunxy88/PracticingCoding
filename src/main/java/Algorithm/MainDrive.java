@@ -11,11 +11,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.firstMissingPositive(new int[] {1, 2, 0}));
+        System.out.println(Solution.minSubArrayLen(7, new int[] {2, 3, 1, 2, 4, 3}));
     }
 }
 
 class Solution {
+    public static int minSubArrayLen(int s, int[] nums) {
+        return new LeetCode209().minSubArrayLen(s, nums);
+    }
+
     public static int firstMissingPositive(int[] nums) {
         return new LeetCode41().firstMissingPositive(nums);
     }
