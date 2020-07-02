@@ -1,1 +1,4 @@
-/target/classes/
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/target/
+*.class
