@@ -11,11 +11,21 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minSubArrayLen(7, new int[] {2, 3, 1, 2, 4, 3}));
+        int[] nums = new int[] {1, 2, 3, 4, 5, 6, 7};
+        Solution.rotate(nums, 2);
+        System.out.println(Arrays.toString(nums));
     }
 }
 
 class Solution {
+    public static void rotate(int[] nums, int k) {
+        new LeetCode189().rotate(nums, k);
+    }
+
+    public static int removeDuplicates2(int[] nums) {
+        return new LeetCode80().removeDuplicates(nums);
+    }
+
     public static int minSubArrayLen(int s, int[] nums) {
         return new LeetCode209().minSubArrayLen(s, nums);
     }
