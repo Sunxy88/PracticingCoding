@@ -11,13 +11,18 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[] nums = new int[] {1, 2, 3, 4, 5, 6, 7};
-        Solution.rotate(nums, 2);
-        System.out.println(Arrays.toString(nums));
+        System.out.println(Solution.uniquePathsWithObstacles(new int[][] {
+                {0, 0},
+                {1, 0},
+        }));
     }
 }
 
 class Solution {
+    public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        return new LeetCode63().uniquePathsWithObstacles(obstacleGrid);
+    }
+
     public static void rotate(int[] nums, int k) {
         new LeetCode189().rotate(nums, k);
     }
