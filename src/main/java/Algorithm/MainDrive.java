@@ -1,6 +1,7 @@
 package Algorithm;
 
 import Algorithm.Solutions.CrackingTheCodeInterview.Question1618;
+import Algorithm.Solutions.CrackingTheCodeInterview.Question1713;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
@@ -11,14 +12,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.uniquePathsWithObstacles(new int[][] {
-                {0, 0},
-                {1, 0},
-        }));
+        System.out.println(Solution.getHint("011", "110"));
     }
 }
 
 class Solution {
+    public static int respace(String[] dictionary, String sentence) {
+        return new Question1713().respace(dictionary, sentence);
+    }
+
+    public static String getHint(String secret, String guess) {
+        return new LeetCode299().getHint(secret, guess);
+    }
+
     public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
         return new LeetCode63().uniquePathsWithObstacles(obstacleGrid);
     }
