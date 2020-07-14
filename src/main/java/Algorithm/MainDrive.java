@@ -12,11 +12,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.getHint("011", "110"));
+        System.out.println(Solution.getRow(3));
     }
 }
 
 class Solution {
+    public static List<Integer> getRow(int rowIndex) {
+        return new LeetCode119().getRow(rowIndex);
+    }
+
     public static int respace(String[] dictionary, String sentence) {
         return new Question1713().respace(dictionary, sentence);
     }
