@@ -12,11 +12,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.getRow(3));
+        System.out.println(Solution.hIndex(new int[] {0, 1, 3, 5, 6}));
     }
 }
 
 class Solution {
+    public static int hIndex(int[] citations) {
+        return new LeetCode274().hIndex(citations);
+    }
+
     public static List<Integer> getRow(int rowIndex) {
         return new LeetCode119().getRow(rowIndex);
     }
