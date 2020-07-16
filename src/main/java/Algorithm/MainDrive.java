@@ -12,11 +12,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.hIndex(new int[] {0, 1, 3, 5, 6}));
+        System.out.println(Solution.containsNearbyDuplicate(new int[] {1, 2, 3, 1, 2, 3}, 2));
     }
 }
 
 class Solution {
+    public static boolean containsNearbyDuplicate(int[] nums, int k) {
+        return new LeetCode219().containsNearbyDuplicate(nums, k);
+    }
+
+    public static int searchInsert(int[] nums, int target) {
+        return new LeetCode35().searchInsert(nums, target);
+    }
+
     public static int hIndex(int[] citations) {
         return new LeetCode274().hIndex(citations);
     }
