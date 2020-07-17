@@ -12,11 +12,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.containsNearbyDuplicate(new int[] {1, 2, 3, 1, 2, 3}, 2));
+        System.out.println(Solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
     }
 }
 
 class Solution {
+    public static boolean isInterleave(String s1, String s2, String s3) {
+        return new LeetCode97().isInterleave(s1, s2, s3);
+    }
+
     public static boolean containsNearbyDuplicate(int[] nums, int k) {
         return new LeetCode219().containsNearbyDuplicate(nums, k);
     }
