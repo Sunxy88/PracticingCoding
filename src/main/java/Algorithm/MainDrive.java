@@ -12,11 +12,18 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isInterleave("aabcc", "dbbca", "aadbbcbcac"));
+        System.out.println(Solution.strStr("mississip", "issip"));
     }
 }
 
 class Solution {
+    public static int strStr(String haystack, String needle) {
+        return new LeetCode28().strStr(haystack, needle);
+    }
+    public static int maxCoins(int[] nums) {
+        return new LeetCode312().maxCoins(nums);
+    }
+
     public static boolean isInterleave(String s1, String s2, String s3) {
         return new LeetCode97().isInterleave(s1, s2, s3);
     }
