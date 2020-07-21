@@ -12,14 +12,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.strStr("mississip", "issip"));
+        System.out.println(Arrays.toString(Solution.twoSum(new int[] {2, 7, 11, 15}, 9)));
     }
 }
 
 class Solution {
+    public static int[] twoSum(int[] numbers, int target) {
+        return new LeetCode167().twoSum(numbers, target);
+    }
+
     public static int strStr(String haystack, String needle) {
         return new LeetCode28().strStr(haystack, needle);
     }
+
     public static int maxCoins(int[] nums) {
         return new LeetCode312().maxCoins(nums);
     }
