@@ -12,11 +12,19 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.twoSum(new int[] {2, 7, 11, 15}, 9)));
+        System.out.println(Solution.firstUniqChar("leetcode"));
     }
 }
 
 class Solution {
+    public static int firstUniqChar(String s) {
+        return new LeetCode387().firstUniqChar(s);
+    }
+
+    public static int findMin(int[] nums) {
+        return new LeetCode154().findMin(nums);
+    }
+
     public static int[] twoSum(int[] numbers, int target) {
         return new LeetCode167().twoSum(numbers, target);
     }
