@@ -12,11 +12,15 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.firstUniqChar("leetcode"));
+        System.out.println(Solution.canFinish(2, new int[][] {{1, 0}}));
     }
 }
 
 class Solution {
+    public static boolean canFinish(int numCourses, int[][] prerequisites) {
+        return new LeetCode207().canFinish(numCourses, prerequisites);
+    }
+
     public static int firstUniqChar(String s) {
         return new LeetCode387().firstUniqChar(s);
     }
