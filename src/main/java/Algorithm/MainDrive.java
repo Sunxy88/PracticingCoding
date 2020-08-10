@@ -12,11 +12,29 @@ import java.util.List;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.canFinish(2, new int[][] {{1, 0}}));
+        char[][] board = new char[][]{
+                {'O','O'},
+                {'O','O'},
+        };
+        Solution.solve(board);
+        for (char[] cs : board) {
+            for (char c : cs) {
+                System.out.print(c + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
 class Solution {
+    public static void solve(char[][] board) {
+        new LeetCode130().solve(board);
+    }
+
+    public static int countBinarySubstrings(String s) {
+        return new LeetCode696().countBinarySubstrings(s);
+    }
+
     public static boolean canFinish(int numCourses, int[][] prerequisites) {
         return new LeetCode207().canFinish(numCourses, prerequisites);
     }
