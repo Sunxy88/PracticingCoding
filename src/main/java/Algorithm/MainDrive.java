@@ -8,21 +8,18 @@ import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.UsefulDataStructure.ListNode;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        char[][] board = new char[][]{
-                {'O','O'},
-                {'O','O'},
-        };
-        Solution.solve(board);
-        for (char[] cs : board) {
-            for (char c : cs) {
-                System.out.print(c + " ");
-            }
-            System.out.println();
-        }
+        Map<String, Integer> map1 = new HashMap<>();
+        Map<String, Integer> map2 = new HashMap<>();
+        map1.put("1", 1);
+        map2.put("2", 2);
+        map1.putAll(map2);
+        System.out.println(map1);
     }
 }
 
