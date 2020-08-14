@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.addStrings("233", "122"));
+        System.out.println(Solution.isValid("([)}"));
     }
 }
 
 class Solution {
+    public static boolean isValid(String s) {
+        return new LeetCode20().isValid(s);
+    }
+
     public static String addStrings(String num1, String num2) {
         return new LeetCode415().addStrings(num1, num2);
     }
