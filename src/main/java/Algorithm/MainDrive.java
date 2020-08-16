@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.removeBoxes(new int[] {1,3,2,2,2,3,4,3,1}));
+        System.out.println(Solution.subsets(new int[] {1, 2, 3}));
     }
 }
 
 class Solution {
+    public static List<List<Integer>> subsets(int[] nums) {
+        return new LeetCode78().subsets(nums);
+    }
+
     public static int removeBoxes(int[] boxes) {
         return new LeetCode546().removeBoxes(boxes);
     }
