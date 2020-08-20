@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.subsets(new int[] {1, 2, 3}));
+        System.out.println(Solution.findRepeatNumber(new int[] {0, 1, 2, 3, 4, 11, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}));
     }
 }
 
 class Solution {
+    public static int findRepeatNumber(int[] nums) {
+        return new offer03().findRepeatNumber(nums);
+    }
+
     public static List<List<Integer>> subsets(int[] nums) {
         return new LeetCode78().subsets(nums);
     }
