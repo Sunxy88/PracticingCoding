@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.rangeBitwiseAnd(5, 7));
+        System.out.println(Solution.findSubsequences(new int[] {4, 6, 7, 7}));
     }
 }
 
 class Solution {
+    public static List<List<Integer>> findSubsequences(int[] nums) {
+        return new LeetCode491().findSubsequences(nums);
+    }
+
     public static int rangeBitwiseAnd(int m, int n) {
         return new LeetCode201().rangeBitwiseAnd(m, n);
     }
