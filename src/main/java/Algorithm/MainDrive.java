@@ -14,11 +14,20 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findSubsequences(new int[] {4, 6, 7, 7}));
+        System.out.println(Solution.letterCombinations("23"));
     }
 }
 
 class Solution {
+
+    public static boolean findNumberIn2DArray(int[][] matrix, int target) {
+        return new offer04().findNumberIn2DArray(matrix, target);
+    }
+
+    public static List<String> letterCombinations(String digits) {
+        return new LeetCode17().letterCombinations(digits);
+    }
+
     public static List<List<Integer>> findSubsequences(int[] nums) {
         return new LeetCode491().findSubsequences(nums);
     }
