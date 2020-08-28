@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.letterCombinations("23"));
+        System.out.println(Solution.judgeCircle("LL"));
     }
 }
 
 class Solution {
+
+    public static boolean judgeCircle(String moves) {
+        return new LeetCode657().judgeCircle(moves);
+    }
 
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
         return new offer04().findNumberIn2DArray(matrix, target);
