@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.judgeCircle("LL"));
+        System.out.println(Solution.replaceSpace("We are family"));
     }
 }
 
 class Solution {
+
+    public static String replaceSpace(String s) {
+        return new offer05().replaceSpace(s);
+    }
 
     public static boolean judgeCircle(String moves) {
         return new LeetCode657().judgeCircle(moves);
