@@ -14,11 +14,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.replaceSpace("We are family"));
+        System.out.println(Solution.getPermutation(4, 9));
     }
 }
 
 class Solution {
+
+    public static String getPermutation(int n, int k) {
+        return new LeetCode60().getPermutation(n, k);
+    }
 
     public static String replaceSpace(String s) {
         return new offer05().replaceSpace(s);
