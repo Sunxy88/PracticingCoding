@@ -5,6 +5,9 @@ import Algorithm.Solutions.CrackingTheCodeInterview.Question1713;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
+import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5491;
+import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5492;
+import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5493;
 import Algorithm.UsefulDataStructure.ListNode;
 
 import java.util.Arrays;
@@ -14,11 +17,23 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.getPermutation(4, 9));
+        System.out.println(Solution.findLengthOfShortestSubarray(new int[] {6,3,10,11,15,20,13,3,18,12}));
     }
 }
 
 class Solution {
+
+    public static int findLengthOfShortestSubarray(int[] arr) {
+        return new CompeteQuestion5493().findLengthOfShortestSubarray(arr);
+    }
+
+    public static int numWays(String s) {
+        return new CompeteQuestion5492().numWays(s);
+    }
+
+    public static int diagonalSum(int[][] mat) {
+        return new CompeteQuestion5491().diagonalSum(mat);
+    }
 
     public static String getPermutation(int n, int k) {
         return new LeetCode60().getPermutation(n, k);
