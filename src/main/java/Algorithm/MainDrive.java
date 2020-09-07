@@ -17,11 +17,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findLengthOfShortestSubarray(new int[] {6,3,10,11,15,20,13,3,18,12}));
+        System.out.println(Solution.fib(5));
     }
 }
 
 class Solution {
+
+    public static int fib(int n) {
+        return new offer10q1().fib(n);
+    }
 
     public static int findLengthOfShortestSubarray(int[] arr) {
         return new CompeteQuestion5493().findLengthOfShortestSubarray(arr);
