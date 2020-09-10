@@ -17,11 +17,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.combinationSum2(new int[] {10,1,2,7,6,1,5}, 8));
+        System.out.println(Solution.minArray(new int[] {1, 3, 3}));
     }
 }
 
 class Solution {
+
+    public static int minArray(int[] numbers) {
+        return new offer11().minArray(numbers);
+    }
 
     public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
         return new LeetCode40().combinationSum2(candidates, target);
