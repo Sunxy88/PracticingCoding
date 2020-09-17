@@ -17,11 +17,21 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.combinationSum3(3, 7));
+        System.out.println(Arrays.toString(Solution.findRedundantDirectedConnection(new int[][]{
+                {1, 2},
+                {2, 3},
+                {3, 4},
+                {4, 1},
+                {1, 5},
+        })));
     }
 }
 
 class Solution {
+
+    public static int[] findRedundantDirectedConnection(int[][] edges) {
+        return new LeetCode685().findRedundantDirectedConnection(edges);
+    }
 
     public static List<List<Integer>> combinationSum3(int k, int n) {
         return new LeetCode216().combinationSum3(k, n);
