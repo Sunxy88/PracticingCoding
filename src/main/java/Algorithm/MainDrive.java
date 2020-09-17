@@ -17,17 +17,15 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.findRedundantDirectedConnection(new int[][]{
-                {1, 2},
-                {2, 3},
-                {3, 4},
-                {4, 1},
-                {1, 5},
-        })));
+        System.out.println(Solution.permuteUnique(new int[] {1, 1, 2}));
     }
 }
 
 class Solution {
+
+    public static List<List<Integer>> permuteUnique(int[] nums) {
+        return new LeetCode47().permuteUnique(nums);
+    }
 
     public static int[] findRedundantDirectedConnection(int[][] edges) {
         return new LeetCode685().findRedundantDirectedConnection(edges);
