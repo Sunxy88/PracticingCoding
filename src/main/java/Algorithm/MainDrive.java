@@ -5,9 +5,7 @@ import Algorithm.Solutions.CrackingTheCodeInterview.Question1713;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
-import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5491;
-import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5492;
-import Algorithm.Solutions.LeetCodeCompet.CompeteQuestion5493;
+import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.UsefulDataStructure.ListNode;
 
 import java.util.Arrays;
@@ -17,11 +15,23 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.permuteUnique(new int[] {1, 1, 2}));
+        System.out.println(Solution.minSubarray(new int[] {1, 2, 3}, 3));
     }
 }
 
 class Solution {
+
+    public static int minSubarray(int[] nums, int p) {
+        return new CompeteQuestion5504().minSubarray(nums, p);
+    }
+
+    public static int maxSumRangeQuery(int[] nums, int[][] requests) {
+        return new CompeteQuestion5505().maxSumRangeQuery(nums, requests);
+    }
+
+    public static int sumOddLengthSubarrays(int[] arr) {
+        return new CompeteQuestion5503().sumOddLengthSubarrays(arr);
+    }
 
     public static List<List<Integer>> permuteUnique(int[] nums) {
         return new LeetCode47().permuteUnique(nums);
