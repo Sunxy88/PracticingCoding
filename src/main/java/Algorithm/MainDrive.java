@@ -15,7 +15,10 @@ import java.util.Map;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minSubarray(new int[] {1, 2, 3}, 3));
+        System.out.println(Solution.maxSumRangeQuery(new int[] {1,2,3,4,5}, new int[][] {
+                {1, 3},
+                {0, 1}
+        }));
     }
 }
 

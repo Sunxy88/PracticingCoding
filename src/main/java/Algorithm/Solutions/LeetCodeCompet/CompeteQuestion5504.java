@@ -27,14 +27,6 @@ public class CompeteQuestion5504 {
             if (index != null) {
                 res = Math.min(res, i - index);
             }
-//            Long key = prefixSum[i] % p;
-//            Integer oldIndex = prefixSumMap.get(key);
-//            if (oldIndex != null) {
-//                prefixSumMap.put(key, Math.max(i, oldIndex));
-//            }
-//            else {
-//                prefixSumMap.put(key, i);
-//            }
             prefixSumMap.merge(prefixSum[i] % p, i, Math::max);
         }
 
