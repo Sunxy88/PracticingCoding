@@ -7,18 +7,19 @@ import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.UsefulDataStructure.ListNode;
+import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxSumRangeQuery(new int[] {1,2,3,4,5}, new int[][] {
-                {1, 3},
-                {0, 1}
-        }));
+        List<Integer> list = new ArrayList<>();
+        list.add(0);
+        list.add(0);
+        list.add(null);
+        list.add(0);
+        list.add(0);
+        TreeUtil.trival(TreeUtil.generate(list));
     }
 }
 
