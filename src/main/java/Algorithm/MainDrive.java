@@ -6,24 +6,26 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
-import Algorithm.UsefulDataStructure.ListNode;
+import Algorithm.UsefulDataStructure.TreeNode;
 import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
 import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.add(0);
-        list.add(null);
-        list.add(0);
-        list.add(0);
-        TreeUtil.trival(TreeUtil.generate(list));
+        System.out.println(Arrays.toString(Solution.findMode(TreeUtil.generate(new Integer[] {1, null, 2, 2}))));
     }
 }
 
 class Solution {
+
+    public static int[] findMode(TreeNode root) {
+        return new LeetCode501().findMode(root);
+    }
+
+    public static int numWays(int n) {
+        return new offer10q2().numWays(n);
+    }
 
     public static int minSubarray(int[] nums, int p) {
         return new CompeteQuestion5504().minSubarray(nums, p);

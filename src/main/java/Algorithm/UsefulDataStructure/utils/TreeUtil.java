@@ -1,11 +1,15 @@
 package Algorithm.UsefulDataStructure.utils;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+
 import Algorithm.UsefulDataStructure.TreeNode;
 
 public class TreeUtil {
+
+    public static TreeNode generate(Integer[] list) {
+        List<Integer> tmp = new ArrayList<>(Arrays.asList(list));
+        return generate(tmp);
+    }
 
     public static TreeNode generate(List<Integer> list) {
         if (list == null || list.size() == 0 || list.get(0) == null)
