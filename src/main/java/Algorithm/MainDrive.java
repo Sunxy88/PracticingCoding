@@ -9,15 +9,20 @@ import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.UsefulDataStructure.TreeNode;
 import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
+import javax.swing.plaf.TreeUI;
 import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.findMode(TreeUtil.generate(new Integer[] {1, null, 2, 2}))));
+        TreeUtil.trival(Solution.buildTree(new int[] {9, 3, 15, 20, 7}, new int[] {9, 15, 7, 20, 3}));
     }
 }
 
 class Solution {
+
+    public static TreeNode buildTree(int[] inorder, int[] postorder) {
+        return new LeetCode106().buildTree(inorder, postorder);
+    }
 
     public static int[] findMode(TreeNode root) {
         return new LeetCode501().findMode(root);
