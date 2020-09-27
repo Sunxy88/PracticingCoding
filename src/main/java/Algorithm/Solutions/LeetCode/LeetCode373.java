@@ -23,26 +23,28 @@ public class LeetCode373 {
         }
         return res;
     }
+
+    class Node {
+        private int val;
+        private int index;
+
+        public Node(int val, int index) {
+            this.val = val;
+            this.index = index;
+        }
+
+        public int getVal() {
+            return val;
+        }
+
+        public int getIndex() {
+            return index;
+        }
+
+        public void setIndex(int i) {
+            this.index = i;
+        }
+    }
 }
 
-class Node {
-    private int val;
-    private int index;
 
-    public Node(int val, int index) {
-        this.val = val;
-        this.index = index;
-    }
-
-    public int getVal() {
-        return val;
-    }
-
-    public int getIndex() {
-        return index;
-    }
-
-    public void setIndex(int i) {
-        this.index = i;
-    }
-}
