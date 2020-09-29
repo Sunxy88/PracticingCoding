@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        TreeUtil.trival(Solution.buildTree(new int[] {9, 3, 15, 20, 7}, new int[] {9, 15, 7, 20, 3}));
+        System.out.println(Solution.movingCount(16, 8, 4));
     }
 }
 
 class Solution {
+
+    public static int movingCount(int m, int n, int k) {
+        return new offer13().movingCount(m, n, k);
+    }
 
     public static TreeNode buildTree(int[] inorder, int[] postorder) {
         return new LeetCode106().buildTree(inorder, postorder);
