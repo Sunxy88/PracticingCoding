@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.movingCount(16, 8, 4));
+        System.out.println(Solution.minimumOperations("rrryyyrryyyrr"));
     }
 }
 
 class Solution {
+
+    public static int minimumOperations(String leaves) {
+        return new LCP19().minimumOperations(leaves);
+    }
 
     public static int movingCount(int m, int n, int k) {
         return new offer13().movingCount(m, n, k);
