@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minimumOperations("rrryyyrryyyrr"));
+        System.out.println(Solution.numJewelsInStones("z", "ZZZ"));
     }
 }
 
 class Solution {
+
+    public static int numJewelsInStones(String J, String S) {
+        return new LeetCode771().numJewelsInStones(J, S);
+    }
 
     public static int minimumOperations(String leaves) {
         return new LCP19().minimumOperations(leaves);
