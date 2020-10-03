@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.numJewelsInStones("z", "ZZZ"));
+        System.out.println(Arrays.toString(Solution.twoSum(new int[] {3, 2, 4}, 6)));
     }
 }
 
 class Solution {
+
+    public static int[] twoSum(int[] nums, int target) {
+        return new LeetCode1().twoSum(nums, target);
+    }
 
     public static int numJewelsInStones(String J, String S) {
         return new LeetCode771().numJewelsInStones(J, S);
@@ -172,9 +176,9 @@ class Solution {
         return new LeetCode154().findMin(nums);
     }
 
-    public static int[] twoSum(int[] numbers, int target) {
-        return new LeetCode167().twoSum(numbers, target);
-    }
+//    public static int[] twoSum(int[] numbers, int target) {
+//        return new LeetCode167().twoSum(numbers, target);
+//    }
 
     public static int strStr(String haystack, String needle) {
         return new LeetCode28().strStr(haystack, needle);
