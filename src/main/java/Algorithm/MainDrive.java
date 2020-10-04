@@ -9,16 +9,23 @@ import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.UsefulDataStructure.TreeNode;
 import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
-import javax.swing.plaf.TreeUI;
 import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.twoSum(new int[] {3, 2, 4}, 6)));
+        System.out.println(Solution.threeSum(new int[] {-1, 0, 1, 2, -1, -4}));
     }
 }
 
 class Solution {
+
+    public static List<List<Integer>> threeSum(int[] nums) {
+        return new LeetCode15().threeSum(nums);
+    }
+
+    public static List<List<Integer>> fourSum(int[] nums, int target) {
+        return new LeetCode18().fourSum(nums, target);
+    }
 
     public static int[] twoSum(int[] nums, int target) {
         return new LeetCode1().twoSum(nums, target);
