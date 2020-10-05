@@ -13,11 +13,21 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.threeSum(new int[] {-1, 0, 1, 2, -1, -4}));
+        System.out.println(Arrays.toString(Solution.sumOfDistancesInTree(6, new int[][] {
+                {0, 1},
+                {0, 2},
+                {2, 3},
+                {2, 4},
+                {2, 5},
+        })));
     }
 }
 
 class Solution {
+
+    public static int[] sumOfDistancesInTree(int N, int[][] edges) {
+        return new LeetCode834().sumOfDistancesInTree(N, edges);
+    }
 
     public static List<List<Integer>> threeSum(int[] nums) {
         return new LeetCode15().threeSum(nums);
