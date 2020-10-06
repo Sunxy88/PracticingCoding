@@ -13,17 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.sumOfDistancesInTree(6, new int[][] {
-                {0, 1},
-                {0, 2},
-                {2, 3},
-                {2, 4},
-                {2, 5},
-        })));
+        System.out.println(Solution.myPow(2, 10));
     }
 }
 
 class Solution {
+
+    public static double myPow(double x, int n) {
+        return new offer16().myPow(x, n);
+    }
 
     public static int[] sumOfDistancesInTree(int N, int[][] edges) {
         return new LeetCode834().sumOfDistancesInTree(N, edges);
