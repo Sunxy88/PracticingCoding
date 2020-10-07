@@ -13,11 +13,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.myPow(2, 10));
+        System.out.println(Arrays.toString(Solution.printNumbers(3)));
     }
 }
 
 class Solution {
+
+    public static int[] printNumbers(int n) {
+        return new offer17().printNumbers(n);
+    }
+
+    public static void reverseString(char[] s) {
+        new LeetCode344().reverseString(s);
+    }
 
     public static double myPow(double x, int n) {
         return new offer16().myPow(x, n);

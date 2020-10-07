@@ -1,8 +1,5 @@
 package Algorithm.Solutions.LeetCode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class LeetCode75 {
     public void sortColors(int[] nums) {
         if (nums == null || nums.length == 0) {
