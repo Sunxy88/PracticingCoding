@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.printNumbers(3)));
+        System.out.println(Solution.PredictTheWinner(new int[] {1, 5, 2}));
     }
 }
 
 class Solution {
+
+    public static boolean PredictTheWinner(int[] nums) {
+        return new LeetCode486().PredictTheWinner(nums);
+    }
 
     public static int[] printNumbers(int n) {
         return new offer17().printNumbers(n);
