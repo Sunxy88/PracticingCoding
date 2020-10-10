@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.PredictTheWinner(new int[] {1, 5, 2}));
+        System.out.println(Solution.canPartition(new int[] {1, 2, 5}));
     }
 }
 
 class Solution {
+
+    public static boolean canPartition(int[] nums) {
+        return new LeetCode416().canPartition(nums);
+    }
 
     public static boolean PredictTheWinner(int[] nums) {
         return new LeetCode486().PredictTheWinner(nums);
