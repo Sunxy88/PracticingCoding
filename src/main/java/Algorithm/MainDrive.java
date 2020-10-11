@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.canPartition(new int[] {1, 2, 5}));
+        System.out.println(Solution.getMinimumDifference(TreeUtil.generate(new Integer[] {1, null, 3, 2})));
     }
 }
 
 class Solution {
+
+    public static int getMinimumDifference(TreeNode root) {
+        return new LeetCode530().getMinimumDifference(root);
+    }
 
     public static boolean canPartition(int[] nums) {
         return new LeetCode416().canPartition(nums);
