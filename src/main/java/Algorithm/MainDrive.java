@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.getMinimumDifference(TreeUtil.generate(new Integer[] {1, null, 3, 2})));
+        System.out.println(Solution.isNumber("."));
     }
 }
 
 class Solution {
+
+    public static boolean isNumber(String s) {
+        return new offer20().isNumber(s);
+    }
 
     public static ListNode swapPairs(ListNode head) {
         return new LeetCode24().swapPairs(head);
