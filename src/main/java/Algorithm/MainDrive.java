@@ -6,6 +6,7 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
+import Algorithm.UsefulDataStructure.ListNode;
 import Algorithm.UsefulDataStructure.TreeNode;
 import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
@@ -18,6 +19,10 @@ public class MainDrive {
 }
 
 class Solution {
+
+    public static ListNode swapPairs(ListNode head) {
+        return new LeetCode24().swapPairs(head);
+    }
 
     public static int getMinimumDifference(TreeNode root) {
         return new LeetCode530().getMinimumDifference(root);
