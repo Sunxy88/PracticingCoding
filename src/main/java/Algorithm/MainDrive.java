@@ -14,11 +14,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isNumber("."));
+        System.out.println(Solution.commonChars(new String[]{
+                "cool",
+                "lock",
+                "cook"
+        }));
     }
 }
 
 class Solution {
+
+    public static List<String> commonChars(String[] A) {
+        return new LeetCode1002().commonChars(A);
+    }
 
     public static boolean isNumber(String s) {
         return new offer20().isNumber(s);
