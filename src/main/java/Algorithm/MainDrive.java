@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.exchange(new int[] {2, 1})));
+        System.out.println(Arrays.toString(Solution.sortedSquares(new int[] {1})));
     }
 }
 
 class Solution {
+
+    public static int[] sortedSquares(int[] A) {
+        return new LeetCode977().sortedSquares(A);
+    }
 
     public static int[] exchange(int[] nums) {
         return new offer21().exchange(nums);
