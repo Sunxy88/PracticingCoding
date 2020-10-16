@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.sortedSquares(new int[] {1})));
+        System.out.println(Solution.totalNQueens(4));
     }
 }
 
 class Solution {
+
+    public static int totalNQueens(int n) {
+        return new LeetCode52().totalNQueens(n);
+    }
 
     public static int[] sortedSquares(int[] A) {
         return new LeetCode977().sortedSquares(A);
