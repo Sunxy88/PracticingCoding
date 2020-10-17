@@ -8,17 +8,32 @@ import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.UsefulDataStructure.ListNode;
 import Algorithm.UsefulDataStructure.TreeNode;
+import Algorithm.UsefulDataStructure.utils.ListNodeUtil;
 import Algorithm.UsefulDataStructure.utils.TreeUtil;
 
 import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.totalNQueens(4));
+        System.out.println(ListNodeUtil.toStringHelper(
+                Solution.removeNthFromEnd(
+                        ListNodeUtil.generateListNode(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5))), 6)));
     }
 }
 
 class Solution {
+
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        return new LeetCode19().removeNthFromEnd(head, n);
+    }
+
+    public static int[] bestCoordinate(int[][] towers, int radius) {
+        return new CompeteQuestion5528().bestCoordinate(towers, radius);
+    }
+
+    public static double trimMean(int[] arr) {
+        return new CompeteQuestion5122().trimMean(arr);
+    }
 
     public static int totalNQueens(int n) {
         return new LeetCode52().totalNQueens(n);
