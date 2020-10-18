@@ -15,13 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(ListNodeUtil.toStringHelper(
-                Solution.removeNthFromEnd(
-                        ListNodeUtil.generateListNode(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5))), 6)));
+        System.out.println(Solution.backspaceCompare("a#c", "b"));
     }
 }
 
 class Solution {
+
+    public static boolean backspaceCompare(String S, String T) {
+        return new LeetCode844().backspaceCompare(S, T);
+    }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         return new LeetCode19().removeNthFromEnd(head, n);
