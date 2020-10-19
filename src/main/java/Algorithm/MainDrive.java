@@ -15,11 +15,17 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.backspaceCompare("a#c", "b"));
+        ListNode head = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4));
+        Solution.reorderList(head);
+        System.out.println(ListNodeUtil.toStringHelper(head));
     }
 }
 
 class Solution {
+
+    public static void reorderList(ListNode head) {
+        new LeetCode143().reorderList(head);
+    }
 
     public static boolean backspaceCompare(String S, String T) {
         return new LeetCode844().backspaceCompare(S, T);
