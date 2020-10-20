@@ -15,13 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        ListNode head = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4));
-        Solution.reorderList(head);
-        System.out.println(ListNodeUtil.toStringHelper(head));
+        System.out.println(Solution.isLongPressedName("pyplrz", "pppyyppllr"));
     }
 }
 
 class Solution {
+
+    public static boolean isLongPressedName(String name, String typed) {
+        return new LeetCode925().isLongPressedName(name, typed);
+    }
 
     public static void reorderList(ListNode head) {
         new LeetCode143().reorderList(head);
