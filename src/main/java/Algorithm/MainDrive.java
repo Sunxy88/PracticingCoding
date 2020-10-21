@@ -15,11 +15,17 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isLongPressedName("pyplrz", "pppyyppllr"));
+        ListNode l1 = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 4));
+        ListNode l2 = ListNodeUtil.generateListNode(Arrays.asList(1, 3, 4));
+        System.out.println(ListNodeUtil.toStringHelper(Solution.mergeTwoLists(l1, l2)));
     }
 }
 
 class Solution {
+
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        return new offer25().mergeTwoLists(l1, l2);
+    }
 
     public static boolean isLongPressedName(String name, String typed) {
         return new LeetCode925().isLongPressedName(name, typed);
