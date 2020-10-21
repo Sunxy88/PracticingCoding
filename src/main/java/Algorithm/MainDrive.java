@@ -15,13 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        ListNode l1 = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 4));
-        ListNode l2 = ListNodeUtil.generateListNode(Arrays.asList(1, 3, 4));
-        System.out.println(ListNodeUtil.toStringHelper(Solution.mergeTwoLists(l1, l2)));
+        System.out.println(Solution.partitionLabels("ababcbacadefegdehijhklij"));
     }
 }
 
 class Solution {
+
+    public static List<Integer> partitionLabels(String S) {
+        return new LeetCode763().partitionLabels(S);
+    }
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         return new offer25().mergeTwoLists(l1, l2);
