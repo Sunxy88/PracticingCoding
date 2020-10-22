@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.partitionLabels("ababcbacadefegdehijhklij"));
+        System.out.println(Solution.isPanlindrome(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 2))));
     }
 }
 
 class Solution {
+
+    public static boolean isPanlindrome(ListNode head) {
+        return new LeetCode234().isPalindrome(head);
+    }
 
     public static List<Integer> partitionLabels(String S) {
         return new LeetCode763().partitionLabels(S);
