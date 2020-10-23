@@ -15,11 +15,16 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isPanlindrome(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 2))));
+        System.out.println(Solution.isSubStructure(
+                TreeUtil.generate(new Integer[]{3,4,5,1,2}), TreeUtil.generate(new Integer[]{4, 1})));
     }
 }
 
 class Solution {
+
+    public static boolean isSubStructure(TreeNode A, TreeNode B) {
+        return new offer26().isSubStructure(A, B);
+    }
 
     public static boolean isPanlindrome(ListNode head) {
         return new LeetCode234().isPalindrome(head);
