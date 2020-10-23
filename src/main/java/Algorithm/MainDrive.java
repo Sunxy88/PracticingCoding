@@ -15,12 +15,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isSubStructure(
-                TreeUtil.generate(new Integer[]{3,4,5,1,2}), TreeUtil.generate(new Integer[]{4, 1})));
+        TreeNode t = TreeUtil.generate(new Integer[] {4,2,7,1,3,6,9});
+        TreeUtil.trival(t);
+        System.out.println("\n------------------\n");
+        TreeUtil.trival(Solution.mirrorTree(t));
+
     }
 }
 
 class Solution {
+
+    public static TreeNode mirrorTree(TreeNode root) {
+        return new offer27().mirrorTree(root);
+    }
 
     public static boolean isSubStructure(TreeNode A, TreeNode B) {
         return new offer26().isSubStructure(A, B);
