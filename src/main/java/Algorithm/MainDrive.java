@@ -15,15 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        TreeNode t = TreeUtil.generate(new Integer[] {4,2,7,1,3,6,9});
-        TreeUtil.trival(t);
-        System.out.println("\n------------------\n");
-        TreeUtil.trival(Solution.mirrorTree(t));
-
+        System.out.println(Solution.longestMountain(new int[] {1, 2, 3, 4, 3, 2, 1}));
     }
 }
 
 class Solution {
+
+    public static int longestMountain(int[] A) {
+        return new LeetCode845().longestMountain(A);
+    }
 
     public static TreeNode mirrorTree(TreeNode root) {
         return new offer27().mirrorTree(root);
