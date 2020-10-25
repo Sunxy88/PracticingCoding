@@ -21,6 +21,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static int[] smallerNumbersThanCurrent(int[] nums) {
+        return new LeetCode1365().smallerNumbersThanCurrent(nums);
+    }
+
     public static int longestMountain(int[] A) {
         return new LeetCode845().longestMountain(A);
     }
