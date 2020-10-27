@@ -1,28 +1,30 @@
 package Algorithm.Solutions.LeetCode;
 
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 import Algorithm.UsefulDataStructure.TreeNode;
 
 public class LeetCode144 {
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> res = new LinkedList<>();
-        if (root == null)
+        List<Integer> res = new ArrayList<>();
+
+        if (root == null) {
             return res;
+        }
 
-        Stack<TreeNode> s = new Stack<>();
-        TreeNode t;
-        s.push(root);
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        stack.addLast(root);
+        TreeNode cur;
 
-        while (!s.isEmpty()) {
-            t = s.pop();
-            res.add(t.val);
-            if (t.right != null)
-                s.push(t.right);
-            if (t.left != null)
-                s.push(t.left);
+        while (!stack.isEmpty()) {
+            cur = stack.pollLast();
+            res.add(cur.val);
+            if (cur.right != null) {
+                stack.addLast(cur.right);
+            }
+            if (cur.left != null) {
+                stack.addLast(cur.left);
+            }
         }
 
         return res;

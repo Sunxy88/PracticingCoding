@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.longestMountain(new int[] {1, 2, 3, 4, 3, 2, 1}));
+        System.out.println(Solution.isSymmetric(TreeUtil.generate(new Integer[] {1, 2, 2, 3, 4, 4, 3})));
     }
 }
 
 class Solution {
+
+    public static boolean isSymmetric(TreeNode root) {
+        return new offer28().isSymmetric(root);
+    }
 
     public static int[] smallerNumbersThanCurrent(int[] nums) {
         return new LeetCode1365().smallerNumbersThanCurrent(nums);
