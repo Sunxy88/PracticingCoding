@@ -15,11 +15,28 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isSymmetric(TreeUtil.generate(new Integer[] {1, 2, 2, 3, 4, 4, 3})));
+        System.out.println(Solution.islandPerimeter(new int[][] {
+                {0, 1, 0, 0},
+                {1, 1, 1, 0},
+                {0, 1, 0, 0},
+                {1, 1, 0, 0}
+        }));
     }
 }
 
 class Solution {
+
+    public static int islandPerimeter(int[][] grid) {
+        return new LeetCode463().islandPerimeter(grid);
+    }
+
+    public static int[] spiralOrder(int[][] matrix) {
+        return new offer29().spiralOrder(matrix);
+    }
+
+    public static boolean uniqueOccurrences(int[] arr) {
+        return new LeetCode1207().uniqueOccurrences(arr);
+    }
 
     public static boolean isSymmetric(TreeNode root) {
         return new offer28().isSymmetric(root);
