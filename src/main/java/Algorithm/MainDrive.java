@@ -26,6 +26,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static List<String> wordBreak(String s, List<String> wordDict) {
+        return new LeetCode140().wordBreak(s, wordDict);
+    }
+
     public static int islandPerimeter(int[][] grid) {
         return new LeetCode463().islandPerimeter(grid);
     }
