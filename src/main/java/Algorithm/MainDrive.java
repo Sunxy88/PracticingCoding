@@ -15,16 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.islandPerimeter(new int[][] {
-                {0, 1, 0, 0},
-                {1, 1, 1, 0},
-                {0, 1, 0, 0},
-                {1, 1, 0, 0}
-        }));
+        System.out.println(Arrays.toString(Solution.intersection(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4})));
     }
 }
 
 class Solution {
+
+    public static int[] intersection(int[] nums1, int[] nums2) {
+        return new LeetCode349().intersection(nums1, nums2);
+    }
 
     public static List<String> wordBreak(String s, List<String> wordDict) {
         return new LeetCode140().wordBreak(s, wordDict);
