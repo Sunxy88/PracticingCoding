@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.intersection(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4})));
+        System.out.println(Solution.validMountainArray(new int[] {0, 1, 2, 3, 4}));
     }
 }
 
 class Solution {
+
+    public static boolean validMountainArray(int[] A) {
+        return new LeetCode941().validMountainArray(A);
+    }
 
     public static int[] intersection(int[] nums1, int[] nums2) {
         return new LeetCode349().intersection(nums1, nums2);
