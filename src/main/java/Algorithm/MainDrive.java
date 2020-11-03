@@ -15,11 +15,24 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.validMountainArray(new int[] {0, 1, 2, 3, 4}));
+        int[][] res = Solution.insert(new int[][] {
+                {1, 3},
+                {6, 9},
+        }, new int[]{2, 5});
+        for (int[] re : res) {
+            for (int i : re) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
 class Solution {
+
+    public static int[][] insert(int[][] intervals, int[] newInterval) {
+        return new LeetCode57().insert(intervals, newInterval);
+    }
 
     public static boolean validMountainArray(int[] A) {
         return new LeetCode941().validMountainArray(A);
