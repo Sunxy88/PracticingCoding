@@ -15,20 +15,14 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[][] res = Solution.insert(new int[][] {
-                {1, 3},
-                {6, 9},
-        }, new int[]{2, 5});
-        for (int[] re : res) {
-            for (int i : re) {
-                System.out.print(i + " ");
-            }
-            System.out.println();
-        }
     }
 }
 
 class Solution {
+
+    public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        return new LeetCode127().ladderLength(beginWord, endWord, wordList);
+    }
 
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         return new LeetCode57().insert(intervals, newInterval);
