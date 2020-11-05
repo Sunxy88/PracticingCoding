@@ -15,10 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
+        System.out.println(Arrays.toString(Solution.sortByBits(new int[] {10,100,1000,10000})));
     }
 }
 
 class Solution {
+
+    public static int[] sortByBits(int[] arr) {
+        return new LeetCode1356().sortByBits(arr);
+    }
 
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         return new LeetCode127().ladderLength(beginWord, endWord, wordList);
