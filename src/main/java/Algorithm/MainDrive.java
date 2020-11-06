@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.sortByBits(new int[] {10,100,1000,10000})));
+        System.out.println(Solution.countRangeSum(new int[] {-2, 5, -1}, -2, 2));
     }
 }
 
 class Solution {
+
+    public static int countRangeSum(int[] nums, int lower, int upper) {
+        return new LeetCode327().countRangeSum(nums, lower, upper);
+    }
 
     public static int[] sortByBits(int[] arr) {
         return new LeetCode1356().sortByBits(arr);
