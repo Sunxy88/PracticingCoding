@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.countRangeSum(new int[] {-2, 5, -1}, -2, 2));
+        System.out.println(Solution.maxProfit(new int[] {3,3,5,0,0,3,1,4}));
     }
 }
 
 class Solution {
+
+    public static int maxProfit(int[] prices) {
+        return new LeetCode123().maxProfit(prices);
+    }
 
     public static int countRangeSum(int[] nums, int lower, int upper) {
         return new LeetCode327().countRangeSum(nums, lower, upper);
@@ -477,9 +481,9 @@ class Solution {
         return new LeetCode313().nthSuperUglyNumber(n, primes);
     }
 
-    public static int maxProfit(int[] prices) {
-        return new LeetCode122().maxProfit(prices);
-    }
+//    public static int maxProfit(int[] prices) {
+//        return new LeetCode122().maxProfit(prices);
+//    }
 
     public static int nthUglyNumber(int n) {
         return new LeetCode264().nthUglyNumber(n);
