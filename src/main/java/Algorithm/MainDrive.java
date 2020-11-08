@@ -15,11 +15,26 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxProfit(new int[] {3,3,5,0,0,3,1,4}));
+        int[][] ans = Solution.kClosest(new int[][] {
+                {3, 3},
+                {-2, 4},
+                {5, -1}
+        }, 2);
+
+        for (int[] es : ans) {
+            for (int e : es) {
+                System.out.print(e + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
 class Solution {
+
+    public static int[][] kClosest(int[][] points, int K) {
+        return new LeetCode973().kClosest(points, K);
+    }
 
     public static int maxProfit(int[] prices) {
         return new LeetCode123().maxProfit(prices);
