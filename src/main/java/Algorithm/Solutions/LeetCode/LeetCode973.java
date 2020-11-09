@@ -26,7 +26,7 @@ public class LeetCode973 {
     }
 
     private double distanceHelper(int[] point) {
-        return Math.sqrt(Math.pow(point[0], 2) + Math.pow(point[1], 2));
+        return Math.pow(point[0], 2) + Math.pow(point[1], 2);
     }
 
 }

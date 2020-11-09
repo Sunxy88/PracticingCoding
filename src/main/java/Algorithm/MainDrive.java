@@ -15,22 +15,17 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[][] ans = Solution.kClosest(new int[][] {
-                {3, 3},
-                {-2, 4},
-                {5, -1}
-        }, 2);
-
-        for (int[] es : ans) {
-            for (int e : es) {
-                System.out.print(e + " ");
-            }
-            System.out.println();
-        }
+        int[] arr = new int[] {1, 2, 3};
+        Solution.nextPermutation(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
 
 class Solution {
+
+    public static void nextPermutation(int[] nums) {
+        new LeetCode31().nextPermutation(nums);
+    }
 
     public static int[][] kClosest(int[][] points, int K) {
         return new LeetCode973().kClosest(points, K);
