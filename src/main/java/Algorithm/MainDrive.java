@@ -15,13 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[] arr = new int[] {1, 2, 3};
-        Solution.nextPermutation(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Solution.findRotateSteps("godding", "gd"));
     }
 }
 
 class Solution {
+
+    public static int findRotateSteps(String ring, String key) {
+        return new LeetCode514().findRotateSteps(ring, key);
+    }
 
     public static void nextPermutation(int[] nums) {
         new LeetCode31().nextPermutation(nums);
