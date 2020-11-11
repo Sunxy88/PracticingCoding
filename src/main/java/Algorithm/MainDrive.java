@@ -6,6 +6,7 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
+import Algorithm.Solutions.SortForInterview.BubbleSort;
 import Algorithm.UsefulDataStructure.ListNode;
 import Algorithm.UsefulDataStructure.TreeNode;
 import Algorithm.UsefulDataStructure.utils.ListNodeUtil;
@@ -15,7 +16,9 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.sortArrayByParityII(new int[] {4, 2, 5, 7})));
+        Integer[] arr = new Integer[] {3, 1, 2, 4, 5};
+        BubbleSort.intSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
 
