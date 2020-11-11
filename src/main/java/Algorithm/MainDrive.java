@@ -15,11 +15,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findRotateSteps("godding", "gd"));
+        System.out.println(Arrays.toString(Solution.sortArrayByParityII(new int[] {4, 2, 5, 7})));
     }
 }
 
 class Solution {
+
+    public static int[] sortArrayByParityII(int[] A) {
+        return new LeetCode922().sortArrayByParityII(A);
+    }
 
     public static int findRotateSteps(String ring, String key) {
         return new LeetCode514().findRotateSteps(ring, key);
