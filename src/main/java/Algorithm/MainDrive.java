@@ -16,13 +16,18 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        Integer[] arr = new Integer[] {3, 1, 2, 4, 5};
-        BubbleSort.intSort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(
+                ListNodeUtil.toStringHelper(
+                        Solution.oddEvenList(
+                                ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)))));
     }
 }
 
 class Solution {
+
+    public static ListNode oddEvenList(ListNode head) {
+        return new LeetCode328().oddEvenList(head);
+    }
 
     public static int[] sortArrayByParityII(int[] A) {
         return new LeetCode922().sortArrayByParityII(A);
