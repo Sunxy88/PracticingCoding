@@ -16,14 +16,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(
-                ListNodeUtil.toStringHelper(
-                        Solution.oddEvenList(
-                                ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)))));
+        System.out.println(Arrays.toString(Solution.relativeSortArray(new int[] {2,3,1,3,2,4,6,7,9,2,19}, new int[] {2,1,4,3,9,6})));
     }
 }
 
 class Solution {
+
+    public static int[] relativeSortArray(int[] arr1, int[] arr2) {
+        return new LeetCode1122().relativeSortArray(arr1, arr2);
+    }
 
     public static ListNode oddEvenList(ListNode head) {
         return new LeetCode328().oddEvenList(head);
