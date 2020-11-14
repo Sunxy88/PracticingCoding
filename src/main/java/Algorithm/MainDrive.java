@@ -1,26 +1,31 @@
 package Algorithm;
 
-import Algorithm.Solutions.CrackingTheCodeInterview.Question1618;
-import Algorithm.Solutions.CrackingTheCodeInterview.Question1713;
+import Algorithm.Solutions.CrackingTheCodeInterview.*;
 import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.Solutions.SortForInterview.BubbleSort;
-import Algorithm.UsefulDataStructure.ListNode;
-import Algorithm.UsefulDataStructure.TreeNode;
-import Algorithm.UsefulDataStructure.utils.ListNodeUtil;
-import Algorithm.UsefulDataStructure.utils.TreeUtil;
+import Algorithm.UsefulDataStructure.*;
+import Algorithm.UsefulDataStructure.utils.*;
 
 import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.relativeSortArray(new int[] {2,3,1,3,2,4,6,7,9,2,19}, new int[] {2,1,4,3,9,6})));
+        System.out.println(Solution.minimumDeletions("baababbaabbaaabaabbabbbabaaaaaabaabababaaababbb"));
     }
 }
 
 class Solution {
+
+    public static int minimumDeletions(String s) {
+        return new CompeteQuestion5551().minimumDeletions(s);
+    }
+
+    public static int[] decrypt(int[] code, int k) {
+        return new CompeteQuestion5550().decrypt(code, k);
+    }
 
     public static int[] relativeSortArray(int[] arr1, int[] arr2) {
         return new LeetCode1122().relativeSortArray(arr1, arr2);
