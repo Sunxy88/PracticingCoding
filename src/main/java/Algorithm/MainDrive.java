@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minimumDeletions("baababbaabbaaabaabbabbbabaaaaaabaabababaaababbb"));
+        System.out.println(Solution.removeKdigits("10", 1));
     }
 }
 
 class Solution {
+
+    public static String removeKdigits(String num, int k) {
+        return new LeetCode402().removeKdigits(num, k);
+    }
 
     public static int minimumDeletions(String s) {
         return new CompeteQuestion5551().minimumDeletions(s);
