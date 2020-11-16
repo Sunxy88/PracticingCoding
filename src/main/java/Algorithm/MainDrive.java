@@ -13,11 +13,26 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.removeKdigits("10", 1));
+        int[][] people = new int[][] {
+                {7, 0},
+                {4, 4},
+                {7, 1},
+                {5, 0},
+                {6, 1},
+                {5, 2},
+        };
+        int[][] res = Solution.reconstructQueue(people);
+        for (int[] r : res) {
+            System.out.println(r[0] + ", " + r[1]);
+        }
     }
 }
 
 class Solution {
+
+    public static int[][] reconstructQueue(int[][] people) {
+        return new LeetCode406().reconstructQueue(people);
+    }
 
     public static String removeKdigits(String num, int k) {
         return new LeetCode402().removeKdigits(num, k);
