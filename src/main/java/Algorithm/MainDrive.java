@@ -13,22 +13,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[][] people = new int[][] {
-                {7, 0},
-                {4, 4},
-                {7, 1},
-                {5, 0},
-                {6, 1},
-                {5, 2},
-        };
-        int[][] res = Solution.reconstructQueue(people);
-        for (int[] r : res) {
-            System.out.println(r[0] + ", " + r[1]);
-        }
+        System.out.println(Arrays.toString(Solution.levelOrder(TreeUtil.generate(new Integer[] {3,9,20,null,null,15,7}))));
     }
 }
 
 class Solution {
+
+    public static int[] levelOrder(TreeNode root) {
+        return new offer32().levelOrder(root);
+    }
+
+    public static boolean validateStackSequences(int[] pushed, int[] popped) {
+        return new offer31().validateStackSequences(pushed, popped);
+    }
 
     public static int[][] reconstructQueue(int[][] people) {
         return new LeetCode406().reconstructQueue(people);
