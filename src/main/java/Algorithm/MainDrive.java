@@ -13,11 +13,17 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.levelOrder(TreeUtil.generate(new Integer[] {3,9,20,null,null,15,7}))));
+        int[] res = new int[] {0, 1};
+        Solution.moveZeroes(res);
+        System.out.println(Arrays.toString(res));
     }
 }
 
 class Solution {
+
+    public static void moveZeroes(int[] nums) {
+        new LeetCode283().moveZeroes(nums);
+    }
 
     public static int[] levelOrder(TreeNode root) {
         return new offer32().levelOrder(root);
