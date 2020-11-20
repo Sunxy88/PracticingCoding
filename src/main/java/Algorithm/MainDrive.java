@@ -13,13 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[] res = new int[] {0, 1};
-        Solution.moveZeroes(res);
-        System.out.println(Arrays.toString(res));
+        System.out.println(ListNodeUtil.toStringHelper(Solution.insertionSortList(ListNodeUtil.generateListNode(Arrays.asList(-1, 5, 3, 4, 0)))));
     }
 }
 
 class Solution {
+
+    public static ListNode insertionSortList(ListNode head) {
+        return new LeetCode147().insertionSortList(head);
+    }
 
     public static void moveZeroes(int[] nums) {
         new LeetCode283().moveZeroes(nums);
