@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(ListNodeUtil.toStringHelper(Solution.insertionSortList(ListNodeUtil.generateListNode(Arrays.asList(-1, 5, 3, 4, 0)))));
+        System.out.println(Solution.pathSum(TreeUtil.generate(new Integer[] {5,4,8,11,null,13,4,7,2,null,null,5,1}), 22));
     }
 }
 
 class Solution {
+
+    public static List<List<Integer>> pathSum(TreeNode root, int sum) {
+        return new offer34().pathSum(root, sum);
+    }
 
     public static ListNode insertionSortList(ListNode head) {
         return new LeetCode147().insertionSortList(head);

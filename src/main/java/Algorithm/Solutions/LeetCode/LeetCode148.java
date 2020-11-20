@@ -4,12 +4,13 @@ import Algorithm.UsefulDataStructure.ListNode;
 
 public class LeetCode148 {
     public ListNode sortList(ListNode head) {
-        if (head == null || head.next == null)
+        if (head == null || head.next == null) {
             return head;
+        }
         ListNode fast = head.next.next, slow = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
-            fast =fast.next;
+            fast =fast.next.next;
         }
         ListNode t = slow.next;
         slow.next = null;
