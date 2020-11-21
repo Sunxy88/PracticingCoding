@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.pathSum(TreeUtil.generate(new Integer[] {5,4,8,11,null,13,4,7,2,null,null,5,1}), 22));
+        System.out.println(Solution.isAnagram("car", "rac"));
     }
 }
 
 class Solution {
+
+    public static boolean isAnagram(String s, String t) {
+        return new LeetCode242().isAnagram(s, t);
+    }
 
     public static List<List<Integer>> pathSum(TreeNode root, int sum) {
         return new offer34().pathSum(root, sum);
