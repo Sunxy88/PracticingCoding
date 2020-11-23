@@ -13,11 +13,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isAnagram("car", "rac"));
+//        [[-2147483646,-2147483645],[2147483646,2147483647]]
+        System.out.println(Solution.findMinArrowShots(new int[][] {
+                {-2147483646,-2147483645},
+                {2147483646,2147483647},
+        }));
     }
 }
 
 class Solution {
+
+    public static int findMinArrowShots(int[][] points) {
+        return new LeetCode452().findMinArrowShots(points);
+    }
 
     public static boolean isAnagram(String s, String t) {
         return new LeetCode242().isAnagram(s, t);
