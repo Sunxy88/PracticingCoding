@@ -1,0 +1,15 @@
+package Algorithm.Solutions.LeetCode;
+
+import Algorithm.UsefulDataStructure.TreeNode;
+
+public class LeetCode222 {
+
+    public int countNodes(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        return 1 + countNodes(root.left) + countNodes(root.right);
+    }
+
+}

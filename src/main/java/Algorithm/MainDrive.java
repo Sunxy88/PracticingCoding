@@ -13,7 +13,6 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-//        [[-2147483646,-2147483645],[2147483646,2147483647]]
         System.out.println(Solution.findMinArrowShots(new int[][] {
                 {-2147483646,-2147483645},
                 {2147483646,2147483647},
@@ -22,6 +21,10 @@ public class MainDrive {
 }
 
 class Solution {
+
+    public static int countNodes(TreeNode root) {
+        return new LeetCode222().countNodes(root);
+    }
 
     public static int findMinArrowShots(int[][] points) {
         return new LeetCode452().findMinArrowShots(points);
