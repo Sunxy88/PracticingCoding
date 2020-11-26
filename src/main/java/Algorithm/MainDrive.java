@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.sortString("spo"));
+        System.out.println(Solution.maximumGap(new int[] {3, 6, 9, 1}));
     }
 }
 
 class Solution {
+
+    public static int maximumGap(int[] nums) {
+        return new LeetCode164().maximumGap(nums);
+    }
 
     public static String sortString(String s) {
         return new LeetCode1370().sortString(s);
