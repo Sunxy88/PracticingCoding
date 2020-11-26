@@ -6,6 +6,7 @@ import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
 import Algorithm.Solutions.SortForInterview.BubbleSort;
+import Algorithm.Solutions.SortForInterview.CountingSort;
 import Algorithm.UsefulDataStructure.*;
 import Algorithm.UsefulDataStructure.utils.*;
 
@@ -13,7 +14,7 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maximumGap(new int[] {3, 6, 9, 1}));
+        System.out.println(Arrays.toString(CountingSort.intSort(new int[] {329, 457, 657, 839, 436, 720, 355})));
     }
 }
 
