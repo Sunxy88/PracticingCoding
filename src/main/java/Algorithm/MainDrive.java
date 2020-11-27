@@ -14,12 +14,14 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(CountingSort.intSort(new int[] {329, 457, 657, 839, 436, 720, 355})));
     }
 }
 
 class Solution {
 
+    public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
+        return new LeetCode454().fourSumCount(A, B, C, D);
+    }
     public static int maximumGap(int[] nums) {
         return new LeetCode164().maximumGap(nums);
     }
