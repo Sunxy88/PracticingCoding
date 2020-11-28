@@ -5,8 +5,6 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
-import Algorithm.Solutions.SortForInterview.BubbleSort;
-import Algorithm.Solutions.SortForInterview.CountingSort;
 import Algorithm.UsefulDataStructure.*;
 import Algorithm.UsefulDataStructure.utils.*;
 
@@ -14,7 +12,6 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.reversePairs(new int[] {1, 3, 2, 3, 1}));
     }
 }
 
