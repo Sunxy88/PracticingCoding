@@ -14,10 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
+        System.out.println(Solution.reversePairs(new int[] {1, 3, 2, 3, 1}));
     }
 }
 
 class Solution {
+
+    public static int reversePairs(int[] nums) {
+        return new LeetCode493().reversePairs(nums);
+    }
 
     public static int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
         return new LeetCode454().fourSumCount(A, B, C, D);
@@ -646,9 +651,9 @@ class Solution {
 //        return new LeetCode121().maxProfit(prices);
 //    }
 
-    public static int reversePairs(int[] nums) {
-        return new offer51().reversePairs(nums);
-    }
+//    public static int reversePairs(int[] nums) {
+//        return new offer51().reversePairs(nums);
+//    }
 
     public static int waysToChange(int n) {
         return new CodeInterview8Q11().waysToChange(n);
