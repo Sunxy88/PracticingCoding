@@ -12,10 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
+        System.out.println(Solution.reorganizeString("aab"));
     }
 }
 
 class Solution {
+
+    public static String reorganizeString(String S) {
+        return new LeetCode767().reorganizeString(S);
+    }
 
     public static int reversePairs(int[] nums) {
         return new LeetCode493().reversePairs(nums);
