@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.maxNumber(new int[] {3, 4, 6, 5}, new int[] {9, 1, 2, 5, 8, 3}, 5)));
+        System.out.println(Solution.countPrimes(10));
     }
 }
 
 class Solution {
+
+    public static int countPrimes(int n) {
+        return new LeetCode204().countPrimes(n);
+    }
 
     public static int[] maxNumber(int[] nums1, int[] nums2, int k) {
         return new LeetCode321().maxNumber(nums1, nums2, k);
