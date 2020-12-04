@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.countPrimes(10));
+        System.out.println(Solution.isPossible(new int[] {1,2,3,3,4,4,5}));
     }
 }
 
 class Solution {
+
+    public static boolean isPossible(int[] nums) {
+        return new LeetCode659().isPossible(nums);
+    }
 
     public static int countPrimes(int n) {
         return new LeetCode204().countPrimes(n);
