@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isPossible(new int[] {1,2,3,3,4,4,5}));
+        System.out.println(Solution.leastInterval(new char[]{'A', 'A', 'A','A','A','A', 'B', 'C', 'D','E','F','G'}, 2));
     }
 }
 
 class Solution {
+
+    public static int leastInterval(char[] tasks, int n) {
+        return new LeetCode621().leastInterval(tasks, n);
+    }
 
     public static boolean isPossible(int[] nums) {
         return new LeetCode659().isPossible(nums);
