@@ -12,11 +12,23 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.leastInterval(new char[]{'A', 'A', 'A','A','A','A', 'B', 'C', 'D','E','F','G'}, 2));
+        System.out.println(Solution.concatenatedBinary(12));
     }
 }
 
 class Solution {
+
+    public static int concatenatedBinary(int n) {
+        return new CompeteQuestion5620().concatenatedBinary(n);
+    }
+
+    public static int maxOperations(int[] nums, int k) {
+        return new CompeteQuestion5618().maxOperations(nums, k);
+    }
+
+    public static String interpret(String command) {
+        return new CompeteQuestion5617().interpret(command);
+    }
 
     public static int leastInterval(char[] tasks, int n) {
         return new LeetCode621().leastInterval(tasks, n);

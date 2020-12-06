@@ -8,7 +8,9 @@ import java.util.List;
 public class LeetCode118 {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res = new ArrayList<>();
-        if (numRows <= 0) return res;
+        if (numRows <= 0) {
+            return res;
+        }
 
         res.add(Collections.singletonList(1));
 
