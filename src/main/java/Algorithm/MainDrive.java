@@ -12,11 +12,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.concatenatedBinary(12));
+        System.out.println(Solution.matrixScore(new int[][]{
+                {0, 0, 1, 1},
+                {1, 0, 1, 0},
+                {1, 1, 0, 0},
+        }));
     }
 }
 
 class Solution {
+
+    public static int matrixScore(int[][] A) {
+        return new LeetCode861().matrixScore(A);
+    }
 
     public static int concatenatedBinary(int n) {
         return new CompeteQuestion5620().concatenatedBinary(n);

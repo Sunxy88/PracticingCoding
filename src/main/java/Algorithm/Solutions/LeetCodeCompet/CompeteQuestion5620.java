@@ -1,7 +1,5 @@
 package Algorithm.Solutions.LeetCodeCompet;
 
-import java.math.BigInteger;
-
 public class CompeteQuestion5620 {
 
     public int concatenatedBinary(int n) {
