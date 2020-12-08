@@ -12,15 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.matrixScore(new int[][]{
-                {0, 0, 1, 1},
-                {1, 0, 1, 0},
-                {1, 1, 0, 0},
-        }));
+        System.out.println(Solution.splitIntoFibonacci("0123"));
     }
 }
 
 class Solution {
+
+    public static List<Integer> splitIntoFibonacci(String S) {
+        return new LeetCode842().splitIntoFibonacci(S);
+    }
 
     public static int matrixScore(int[][] A) {
         return new LeetCode861().matrixScore(A);
