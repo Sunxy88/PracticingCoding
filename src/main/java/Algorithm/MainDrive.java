@@ -12,7 +12,7 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.splitIntoFibonacci("0123"));
+        System.out.println(Solution.uniquePaths(3, 7));
     }
 }
 
