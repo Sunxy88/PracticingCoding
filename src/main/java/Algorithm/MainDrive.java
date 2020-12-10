@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.uniquePaths(3, 7));
+        System.out.println(Solution.lemonadeChange(new int[]{5,5,5,5,20,20,5,5,5,5}));
     }
 }
 
 class Solution {
+
+    public static boolean lemonadeChange(int[] bills) {
+        return new LeetCode860().lemonadeChange(bills);
+    }
 
     public static List<Integer> splitIntoFibonacci(String S) {
         return new LeetCode842().splitIntoFibonacci(S);
