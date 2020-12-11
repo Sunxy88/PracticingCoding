@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.lemonadeChange(new int[]{5,5,5,5,20,20,5,5,5,5}));
+        System.out.println(Solution.predictPartyVictory("DDRRR"));
     }
 }
 
 class Solution {
+
+    public static String predictPartyVictory(String senate) {
+        return new LeetCode649().predictPartyVictory(senate);
+    }
 
     public static boolean lemonadeChange(int[] bills) {
         return new LeetCode860().lemonadeChange(bills);
