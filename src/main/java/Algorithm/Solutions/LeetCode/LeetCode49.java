@@ -4,28 +4,32 @@ import java.util.*;
 
 public class LeetCode49 {
     public List<List<String>> groupAnagrams(String[] strs) {
-        if (strs == null || strs.length == 0)
+        if (strs == null || strs.length == 0) {
             return new LinkedList<>();
+        }
         Map<String, List<String>> map = new HashMap<>();
-        int[] count = new int[26];
 
         for (String str : strs) {
-            Arrays.fill(count, 0);
-            for (Character c : str.toCharArray())
-                count[c - 'a']++;
-            StringBuilder sb = new StringBuilder();
-            for (int i : count) {
-                sb.append(i);
+            int[] counts = new int[26];
+            int length = str.length();
+
+            for (int i = 0; i < length; i++) {
+                counts[str.charAt(i) - 'a']++;
+            }
+
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < counts.length; i++) {
+                if (counts[i] != 0) {
+                    sb.append((char) ('a' + i));
+                    sb.append(counts[i]);
+                }
             }
             String key = sb.toString();
-            if (map.containsKey(key))
-                map.get(key).add(str);
-            else {
-                List<String> toAdd = new LinkedList<>();
-                toAdd.add(str);
-                map.put(key, toAdd);
-            }
+            List<String> element = map.getOrDefault(key, new ArrayList<>());
+            element.add(str);
+            map.put(key, element);
         }
+
         return new ArrayList<>(map.values());
     }
 }
