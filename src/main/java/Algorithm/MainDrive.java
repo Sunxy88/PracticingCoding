@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.wiggleMaxLength(new int[] {1,17,5,10,13,15,10,5,16,8}));
+        System.out.println(Solution.monotoneIncreasingDigits(4321));
     }
 }
 
 class Solution {
+
+    public static int monotoneIncreasingDigits(int N) {
+        return new LeetCode738().monotoneIncreasingDigits(N);
+    }
 
     public static int wiggleMaxLength(int[] nums) {
         return new LeetCode376().wiggleMaxLength(nums);
