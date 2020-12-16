@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.monotoneIncreasingDigits(4321));
+        System.out.println(Solution.wordPattern("abba", "dog cat cat dog"));
     }
 }
 
 class Solution {
+
+    public static boolean wordPattern(String pattern, String s) {
+        return new LeetCode290().wordPattern(pattern, s);
+    }
 
     public static int monotoneIncreasingDigits(int N) {
         return new LeetCode738().monotoneIncreasingDigits(N);
