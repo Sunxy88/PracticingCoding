@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.wordPattern("abba", "dog cat cat dog"));
+        System.out.println(Solution.maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
     }
 }
 
 class Solution {
+
+    public static int maxProfit(int[] prices, int fee) {
+        return new LeetCode714().maxProfit(prices, fee);
+    }
 
     public static boolean wordPattern(String pattern, String s) {
         return new LeetCode290().wordPattern(pattern, s);
