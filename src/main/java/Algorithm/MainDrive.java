@@ -18,6 +18,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static char findTheDifference(String s, String t) {
+        return new LeetCode389().findTheDifference(s, t);
+    }
+
     public static int maxProfit(int[] prices, int fee) {
         return new LeetCode714().maxProfit(prices, fee);
     }
