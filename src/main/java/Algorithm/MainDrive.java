@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxProfit(new int[]{1, 3, 2, 8, 4, 9}, 2));
+        System.out.println(Solution.minCostClimbingStairs(new int[] {10, 15, 20}));
     }
 }
 
 class Solution {
+
+    public static int minCostClimbingStairs(int[] cost) {
+        return new LeetCode746().minCostClimbingStairs(cost);
+    }
 
     public static char findTheDifference(String s, String t) {
         return new LeetCode389().findTheDifference(s, t);

@@ -6,8 +6,9 @@ import java.util.Stack;
 
 public class LeetCode316 {
     public String removeDuplicateLetters(String s) {
-        if (s == null || s.length() == 0)
+        if (s == null || s.length() == 0) {
             return "";
+        }
         Stack<Character> stack = new Stack<>();
         Map<Character, Integer> lastPosition = new HashMap<>();
 
@@ -20,13 +21,15 @@ public class LeetCode316 {
             while (!stack.isEmpty() && !stack.contains(c) && stack.peek() > c && lastPosition.get(stack.peek()) > i) {
                 stack.pop();
             }
-            if (!stack.contains(c))
+            if (!stack.contains(c)) {
                 stack.push(c);
+            }
         }
 
         StringBuilder sb = new StringBuilder(stack.size());
-        while (!stack.isEmpty())
+        while (!stack.isEmpty()) {
             sb.append(stack.pop());
+        }
         return sb.reverse().toString();
     }
 }
