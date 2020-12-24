@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minCostClimbingStairs(new int[] {10, 15, 20}));
+        System.out.println(Solution.translateNum(506));
     }
 }
 
 class Solution {
+
+    public static int translateNum(int num) {
+        return new offer46().translateNum(num);
+    }
 
     public static int minCostClimbingStairs(int[] cost) {
         return new LeetCode746().minCostClimbingStairs(cost);
