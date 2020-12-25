@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.translateNum(506));
+        System.out.println(Solution.findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
     }
 }
 
 class Solution {
+
+    public static int findContentChildren(int[] g, int[] s) {
+        return new LeetCode455().findContentChildren(g, s);
+    }
 
     public static int translateNum(int num) {
         return new offer46().translateNum(num);
