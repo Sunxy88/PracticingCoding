@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findContentChildren(new int[]{1, 2}, new int[]{1, 2, 3}));
+        System.out.println(Solution.lengthOfLongestSubstring("pwwkew"));
     }
 }
 
 class Solution {
+
+    public static int lengthOfLongestSubstring(String s) {
+        return new offer48().lengthOfLongestSubstring(s);
+    }
 
     public static int findContentChildren(int[] g, int[] s) {
         return new LeetCode455().findContentChildren(g, s);
