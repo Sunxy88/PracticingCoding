@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.lengthOfLongestSubstring("pwwkew"));
+        System.out.println(Solution.isIsomorphic("egg", "bar"));
     }
 }
 
 class Solution {
+
+    public static boolean isIsomorphic(String s, String t) {
+        return new LeetCode205().isIsomorphic(s, t);
+    }
 
     public static int lengthOfLongestSubstring(String s) {
         return new offer48().lengthOfLongestSubstring(s);
