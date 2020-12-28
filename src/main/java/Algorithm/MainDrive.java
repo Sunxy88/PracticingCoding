@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxProfit(2, new int[]{2, 4, 1}));
+        System.out.println(Solution.firstUniqChar("abaccdeff"));
     }
 }
 
 class Solution {
+
+    public static char firstUniqChar(String s) {
+        return new offer50().firstUniqChar(s);
+    }
 
     public static int maxProfit(int k, int[] prices) {
         return new LeetCode188().maxProfit(k, prices);
@@ -505,9 +509,9 @@ class Solution {
         return new LeetCode207().canFinish(numCourses, prerequisites);
     }
 
-    public static int firstUniqChar(String s) {
-        return new LeetCode387().firstUniqChar(s);
-    }
+//    public static int firstUniqChar(String s) {
+//        return new LeetCode387().firstUniqChar(s);
+//    }
 
     public static int findMin(int[] nums) {
         return new LeetCode154().findMin(nums);
