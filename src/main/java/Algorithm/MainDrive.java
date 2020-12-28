@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isIsomorphic("egg", "bar"));
+        System.out.println(Solution.maxProfit(2, new int[]{2, 4, 1}));
     }
 }
 
 class Solution {
+
+    public static int maxProfit(int k, int[] prices) {
+        return new LeetCode188().maxProfit(k, prices);
+    }
 
     public static boolean isIsomorphic(String s, String t) {
         return new LeetCode205().isIsomorphic(s, t);
