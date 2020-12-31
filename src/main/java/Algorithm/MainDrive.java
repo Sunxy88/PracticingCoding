@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.firstUniqChar("abaccdeff"));
+        System.out.println(Solution.lastStoneWeight(new int[]{2, 7, 4, 1, 8, 1}));
     }
 }
 
 class Solution {
+
+    public static int lastStoneWeight(int[] stones) {
+        return new LeetCode1046().lastStoneWeight(stones);
+    }
 
     public static char firstUniqChar(String s) {
         return new offer50().firstUniqChar(s);
