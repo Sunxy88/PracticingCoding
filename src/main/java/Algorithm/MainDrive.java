@@ -18,6 +18,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
+        return new LeetCode605().canPlaceFlowers(flowerbed, n);
+    }
+
     public static int lastStoneWeight(int[] stones) {
         return new LeetCode1046().lastStoneWeight(stones);
     }
