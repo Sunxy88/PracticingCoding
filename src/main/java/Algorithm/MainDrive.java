@@ -12,7 +12,28 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.lastStoneWeight(new int[]{2, 7, 4, 1, 8, 1}));
+        LeetCode1116.ZeroEvenOdd event = new LeetCode1116.ZeroEvenOdd(6);
+        new Thread(() -> {
+            try {
+                event.zero(System.out::print);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+        new Thread(() -> {
+            try {
+                event.even(System.out::print);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+        new Thread(() -> {
+            try {
+                event.odd(System.out::print);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
     }
 }
 
