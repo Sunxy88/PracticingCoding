@@ -12,32 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        LeetCode1116.ZeroEvenOdd event = new LeetCode1116.ZeroEvenOdd(6);
-        new Thread(() -> {
-            try {
-                event.zero(System.out::print);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        new Thread(() -> {
-            try {
-                event.even(System.out::print);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
-        new Thread(() -> {
-            try {
-                event.odd(System.out::print);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }).start();
+        System.out.println(Solution.largeGroupPositions("abcdddeeeeaabbbcd"));
     }
 }
 
 class Solution {
+
+    public static List<List<Integer>> largeGroupPositions(String s) {
+        return new LeetCode830().largeGroupPositions(s);
+    }
 
     public static boolean canPlaceFlowers(int[] flowerbed, int n) {
         return new LeetCode605().canPlaceFlowers(flowerbed, n);
