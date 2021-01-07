@@ -18,6 +18,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static int findCircleNum(int[][] isConnected) {
+        return new LeetCode547().findCircleNum(isConnected);
+    }
+
     public static List<List<Integer>> largeGroupPositions(String s) {
         return new LeetCode830().largeGroupPositions(s);
     }
