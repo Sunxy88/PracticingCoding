@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.largeGroupPositions("abcdddeeeeaabbbcd"));
+        System.out.println(Solution.summaryRanges(new int[]{0,1,2,3,4}));
     }
 }
 
 class Solution {
+
+    public static List<String> summaryRanges(int[] nums) {
+        return new LeetCode228().summaryRanges(nums);
+    }
 
     public static int findCircleNum(int[][] isConnected) {
         return new LeetCode547().findCircleNum(isConnected);
