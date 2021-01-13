@@ -27,6 +27,9 @@ class FizzBuzz {
                 if ((!(i % 5 != 0 && i % 3 == 0))) {
                     continue;
                 }
+                if (i > n) {
+                    break;
+                }
                 printFizz.run();
                 i++;
                 lock.notifyAll();
@@ -44,6 +47,9 @@ class FizzBuzz {
                 if ((!(i % 5 == 0 && i % 3 != 0))) {
                     continue;
                 }
+                if (i > n) {
+                    break;
+                }
                 printBuzz.run();
                 i++;
                 lock.notifyAll();
@@ -60,6 +66,9 @@ class FizzBuzz {
                 }
                 if ((!(i % 5 == 0 && i % 3 == 0))) {
                     continue;
+                }
+                if (i > n) {
+                    break;
                 }
                 printFizzBuzz.run();
                 i++;
