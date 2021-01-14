@@ -12,11 +12,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.summaryRanges(new int[]{0,1,2,3,4}));
+        System.out.println(Solution.missingNumber(new int[] {0,1,2,3,4,5,6,7,9}));
     }
 }
 
 class Solution {
+
+    public static int missingNumber(int[] nums) {
+        return new offer53q2().missingNumber(nums);
+    }
+
+    public static int search(int[] nums, int target) {
+        return new offer53q1().search(nums, target);
+    }
 
     public static List<String> summaryRanges(int[] nums) {
         return new LeetCode228().summaryRanges(nums);
@@ -745,9 +753,9 @@ class Solution {
         return new LeetCode202().isHappy(n);
     }
 
-    public static int search(int[] nums, int target) {
-        return new LeetCode33().search(nums, target);
-    }
+//    public static int search(int[] nums, int target) {
+//        return new LeetCode33().search(nums, target);
+//    }
 
     public static int singleNumber(int[] nums) {
         return new LeetCode136().singleNumber(nums);
