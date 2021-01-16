@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.missingNumber(new int[] {0,1,2,3,4,5,6,7,9}));
+
     }
 }
 
 class Solution {
+
+    public static boolean checkStraightLine(int[][] coordinates) {
+        return new LeetCode1232().checkStraightLine(coordinates);
+    }
 
     public static int missingNumber(int[] nums) {
         return new offer53q2().missingNumber(nums);
