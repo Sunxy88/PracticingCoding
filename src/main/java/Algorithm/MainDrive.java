@@ -18,6 +18,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static List<List<String>> accountsMerge(List<List<String>> accounts) {
+        return new LeetCode721().accountsMerge(accounts);
+    }
+
     public static boolean checkStraightLine(int[][] coordinates) {
         return new LeetCode1232().checkStraightLine(coordinates);
     }
