@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-
+        System.out.println(Solution.findLengthOfLCIS(new int[] {1,3,5,4,2,3,4,5}));
     }
 }
 
 class Solution {
+
+    public static int findLengthOfLCIS(int[] nums) {
+        return new LeetCode674().findLengthOfLCIS(nums);
+    }
 
     public static List<List<String>> accountsMerge(List<List<String>> accounts) {
         return new LeetCode721().accountsMerge(accounts);
