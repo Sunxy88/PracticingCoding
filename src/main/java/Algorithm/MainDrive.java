@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isStraight(new int[]{0, 0, 8, 5, 4}));
+        System.out.println(Solution.pivotIndex(new int[]{-1, -1, -1, -1, -1, 0}));
     }
 }
 
 class Solution {
+
+    public static int pivotIndex(int[] nums) {
+        return new LeetCode724().pivotIndex(nums);
+    }
 
     public static boolean isStraight(int[] nums) {
         return new offer61().isStraight(nums);
