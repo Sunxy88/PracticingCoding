@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findLengthOfLCIS(new int[] {1,3,5,4,2,3,4,5}));
+        System.out.println(Solution.isStraight(new int[]{0, 0, 8, 5, 4}));
     }
 }
 
 class Solution {
+
+    public static boolean isStraight(int[] nums) {
+        return new offer61().isStraight(nums);
+    }
 
     public static int findLengthOfLCIS(int[] nums) {
         return new LeetCode674().findLengthOfLCIS(nums);
