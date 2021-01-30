@@ -12,11 +12,21 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.pivotIndex(new int[]{-1, -1, -1, -1, -1, 0}));
+        System.out.println(Solution.swimInWater(new int[][]{
+                {0, 1, 2, 3, 4},
+                {24, 23, 22, 21, 5},
+                {12, 13, 14, 15, 16},
+                {11, 17, 18, 19, 20},
+                {10, 9, 8, 7, 6},
+        }));
     }
 }
 
 class Solution {
+
+    public static int swimInWater(int[][] grid) {
+        return new LeetCode778().swimInWater(grid);
+    }
 
     public static int pivotIndex(int[] nums) {
         return new LeetCode724().pivotIndex(nums);
