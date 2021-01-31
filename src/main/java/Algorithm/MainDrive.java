@@ -12,17 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.swimInWater(new int[][]{
-                {0, 1, 2, 3, 4},
-                {24, 23, 22, 21, 5},
-                {12, 13, 14, 15, 16},
-                {11, 17, 18, 19, 20},
-                {10, 9, 8, 7, 6},
-        }));
+        System.out.println(Solution.numSimilarGroups(new String[]{"tars", "rats", "arts", "star"}));
     }
 }
 
 class Solution {
+
+    public static int numSimilarGroups(String[] strs) {
+        return new LeetCode839().numSimilarGroups(strs);
+    }
 
     public static int swimInWater(int[][] grid) {
         return new LeetCode778().swimInWater(grid);
