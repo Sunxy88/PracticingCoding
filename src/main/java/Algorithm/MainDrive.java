@@ -12,11 +12,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.numSimilarGroups(new String[]{"tars", "rats", "arts", "star"}));
+        System.out.println(Arrays.toString(Solution.fairCandySwap(new int[]{1, 2, 5}, new int[]{2, 4})));
     }
 }
 
 class Solution {
+
+    public static int[] fairCandySwap(int[] A, int[] B) {
+        return new LeetCode888().fairCandySwap(A, B);
+    }
 
     public static int numSimilarGroups(String[] strs) {
         return new LeetCode839().numSimilarGroups(strs);
