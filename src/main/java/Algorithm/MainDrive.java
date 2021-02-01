@@ -5,6 +5,7 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
+import Algorithm.Solutions.SortForInterview.QuickSort;
 import Algorithm.UsefulDataStructure.*;
 import Algorithm.UsefulDataStructure.utils.*;
 
@@ -12,7 +13,10 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.fairCandySwap(new int[]{1, 2, 5}, new int[]{2, 4})));
+        Integer[] arr = new Integer[] {5, 2, 3, 1, 1};
+        System.out.println(Arrays.toString(arr));
+        QuickSort.intSort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
 

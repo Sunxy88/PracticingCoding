@@ -26,7 +26,7 @@ public class BubbleSort {
         for (int i = 0; i + 1 < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (cmp.compare(arr[j - 1], arr[j]) > 0) {
-                    swap(arr, i, j);
+                    swap(arr, j - 1, j);
                 }
             }
         }
