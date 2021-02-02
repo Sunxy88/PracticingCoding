@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.characterReplacement("AABABBA", 1));
+        System.out.println(Arrays.toString(Solution.medianSlidingWindow(new int[]{1, 3, -1, -3, 5, 3, 6, 7}, 3)));
     }
 }
 
 class Solution {
+
+    public static double[] medianSlidingWindow(int[] nums, int k) {
+        return new LeetCode480().medianSlidingWindow(nums, k);
+    }
 
     public static int characterReplacement(String s, int k) {
         return new LeetCode424().characterReplacement(s, k);
