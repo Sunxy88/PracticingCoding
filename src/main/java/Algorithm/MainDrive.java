@@ -13,14 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        Integer[] arr = new Integer[] {5, 2, 3, 1, 1};
-        System.out.println(Arrays.toString(arr));
-        QuickSort.intSort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Solution.characterReplacement("AABABBA", 1));
     }
 }
 
 class Solution {
+
+    public static int characterReplacement(String s, int k) {
+        return new LeetCode424().characterReplacement(s, k);
+    }
 
     public static int[] fairCandySwap(int[] A, int[] B) {
         return new LeetCode888().fairCandySwap(A, B);
