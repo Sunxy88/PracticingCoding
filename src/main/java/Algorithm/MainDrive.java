@@ -13,15 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minMeetingRooms(new int[][]{
-                {5, 10},
-                {15, 20},
-                {0, 30}
-        }));
+        System.out.println(Solution.findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4));
     }
 }
 
 class Solution {
+
+    public static double findMaxAverage(int[] nums, int k) {
+        return new LeetCode643().findMaxAverage(nums, k);
+    }
 
     public static int minMeetingRooms(int[][] intervals) {
         return new LeetCode253().minMeetingRooms(intervals);
