@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4));
+        System.out.println(Solution.equalSubstring("abcd", "acde", 0));
     }
 }
 
 class Solution {
+
+    public static int equalSubstring(String s, String t, int maxCost) {
+        return new LeetCode1208().equalSubstring(s, t, maxCost);
+    }
 
     public static double findMaxAverage(int[] nums, int k) {
         return new LeetCode643().findMaxAverage(nums, k);
