@@ -3,21 +3,23 @@ package Algorithm.Solutions.LeetCode;
 public class LeetCode31 {
 
     public void nextPermutation(int[] nums) {
-        if (nums == null || nums.length == 0) {
+        int len;
+        if (nums == null || (len = nums.length) == 0) {
             return;
         }
-        int i = nums.length - 2;
-        while (i >= 0 && nums[i] >= nums[i + 1]) {
+
+        int i = len - 2, j = len - 1, k = len - 1;
+        while (i >= 0 && nums[i] >= nums[j]) {
             i--;
+            j--;
         }
         if (i >= 0) {
-            int j = nums.length - 1;
-            while (j >= 0 && nums[i] >= nums[j]) {
-                j--;
+            while (nums[k] <= nums[i]) {
+                k--;
             }
-            swap(nums, i, j);
+            swap(nums, k, i);
         }
-        reverse(nums, i + 1);
+        reverse(nums, j);
     }
 
     private void swap(int[]arr, int i, int j) {
