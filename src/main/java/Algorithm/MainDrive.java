@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.equalSubstring("abcd", "acde", 0));
+        System.out.println(Solution.generateParenthesis(3));
     }
 }
 
 class Solution {
+
+    public static List<String> generateParenthesis(int n) {
+        return new LeetCode22().generateParenthesis(n);
+    }
 
     public static int equalSubstring(String s, String t, int maxCost) {
         return new LeetCode1208().equalSubstring(s, t, maxCost);
