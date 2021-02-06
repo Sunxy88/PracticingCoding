@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.longestValidParentheses("()(()"));
+        System.out.println(Solution.checkPossibility(new int[] {4, 2, 3}));
     }
 }
 
 class Solution {
+
+    public static boolean checkPossibility(int[] nums) {
+        return new LeetCode665().checkPossibility(nums);
+    }
 
     public static int longestValidParentheses(String s) {
         return new LeetCode32().longestValidParentheses(s);
