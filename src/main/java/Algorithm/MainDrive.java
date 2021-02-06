@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maxScore(new int[]{1, 2, 3, 4, 5, 6, 1}, 3));
+        System.out.println(Solution.reverse("c34b23a"));
     }
 }
 
 class Solution {
+
+    public static String reverse(String origin) {
+        return new HuaWei1q1().reverse(origin);
+    }
 
     public static int maxScore(int[] cardPoints, int k) {
         return new LeetCode1423().maxScore(cardPoints, k);
