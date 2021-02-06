@@ -14,12 +14,12 @@ public class LeetCode34 {
         return new int[] {-1, -1};
     }
 
-    private int binarySearch(int[] nums, int target, boolean rightFlag) {
+    private int binarySearch(int[] nums, int target, boolean lower) {
         int left = 0, right = nums.length - 1, ans = nums.length;
         int mid;
         while (left <= right) {
             mid = (left + right) >> 1;
-            if (nums[mid] > target || (rightFlag && nums[mid] >= target)) {
+            if (nums[mid] > target || (lower && nums[mid] >= target)) {
                 right = mid - 1;
                 ans = mid;
             } else {

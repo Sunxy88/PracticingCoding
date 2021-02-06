@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.reverse("c34b23a"));
+        System.out.println(Solution.longestValidParentheses("()(()"));
     }
 }
 
 class Solution {
+
+    public static int longestValidParentheses(String s) {
+        return new LeetCode32().longestValidParentheses(s);
+    }
 
     public static String reverse(String origin) {
         return new HuaWei1q1().reverse(origin);
