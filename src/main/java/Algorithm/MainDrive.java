@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.generateParenthesis(3));
+        System.out.println(Solution.maxScore(new int[]{1, 2, 3, 4, 5, 6, 1}, 3));
     }
 }
 
 class Solution {
+
+    public static int maxScore(int[] cardPoints, int k) {
+        return new LeetCode1423().maxScore(cardPoints, k);
+    }
 
     public static List<String> generateParenthesis(int n) {
         return new LeetCode22().generateParenthesis(n);
