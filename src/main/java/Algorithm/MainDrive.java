@@ -13,7 +13,9 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.checkPossibility(new int[] {4, 2, 3}));
+        int[] ary = new int[] {2, 1,0};
+        QuickSort.sort(ary);
+        System.out.println(Arrays.toString(ary));
     }
 }
 

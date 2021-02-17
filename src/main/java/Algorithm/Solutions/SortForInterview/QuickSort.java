@@ -2,36 +2,43 @@ package Algorithm.Solutions.SortForInterview;
 
 public class QuickSort {
 
-    public static void intSort(Integer[] arr) {
-        quickSort(arr, 0, arr.length - 1);
+    public static void sort(int[] ary) {
+        quicksort(ary, 0, ary.length - 1);
     }
 
-    private static void quickSort(Integer[] arr, int l, int r) {
+    private static void quicksort(int[] ary, int l, int r) {
         if (l >= r) {
             return;
         }
-        int pos = partition(arr, l, r);
-        quickSort(arr, l, pos - 1);
-        quickSort(arr, pos + 1, r);
+
+        int pivot = partition(ary, l, r);
+        quicksort(ary, l, pivot - 1);
+        quicksort(ary, pivot + 1, r);
     }
 
-    private static int partition(Integer[] arr, int l, int r) {
-        int pivot = arr[r];
-        int i = l - 1;
-        for (int j = l; j < r; j++) {
-            if (arr[j] <= pivot) {
-                i++;
-                swap(arr, i, j);
+    private static int partition(int[] ary, int l, int r) {
+        if (l >= r) {
+            return l;
+        }
+
+        int pivot = ary[r];
+        int lessIndex = l - 1;
+
+        for (int i = l; i < r; i++) {
+            if (ary[i] < pivot) {
+                lessIndex += 1;
+                swap(ary, lessIndex, i);
             }
         }
-        swap(arr, i + 1, r);
-        return i + 1;
+
+        swap(ary, lessIndex + 1, r);
+        return lessIndex + 1;
     }
 
-    private static void swap(Object[] A, int i, int j) {
-        Object t = A[i];
-        A[i] = A[j];
-        A[j] = t;
+    private static void swap(int[] ary, int x, int y) {
+        int t = ary[x];
+        ary[x] = ary[y];
+        ary[y] = t;
     }
 }
 
