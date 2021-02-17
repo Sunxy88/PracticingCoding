@@ -13,13 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        int[] ary = new int[] {2, 1,0};
-        QuickSort.sort(ary);
-        System.out.println(Arrays.toString(ary));
+        System.out.println(Solution.minWindow("a", "b"));
     }
 }
 
 class Solution {
+
+    public static String minWindow(String s, String t) {
+        return new LeetCode76().minWindow(s, t);
+    }
 
     public static boolean checkPossibility(int[] nums) {
         return new LeetCode665().checkPossibility(nums);
