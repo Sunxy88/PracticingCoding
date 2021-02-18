@@ -13,11 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minWindow("a", "b"));
+        System.out.println(Solution.longestOnes(new int[]{0,0,1,1,1,0,0}, 4));
     }
 }
 
 class Solution {
+
+    public static int longestOnes(int[] A, int K) {
+        return new LeetCode1004().longestOnes(A, K);
+    }
 
     public static String minWindow(String s, String t) {
         return new LeetCode76().minWindow(s, t);
