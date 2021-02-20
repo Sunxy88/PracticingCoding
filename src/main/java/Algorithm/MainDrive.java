@@ -13,11 +13,17 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.longestOnes(new int[]{0,0,1,1,1,0,0}, 4));
+        System.out.println(
+                ListNodeUtil.toStringHelper(
+                        Solution.reverseKGroup(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)), 3)));
     }
 }
 
 class Solution {
+
+    public static ListNode reverseKGroup(ListNode head, int k) {
+        return new LeetCode25().reverseKGroup(head, k);
+    }
 
     public static int longestOnes(int[] A, int K) {
         return new LeetCode1004().longestOnes(A, K);
