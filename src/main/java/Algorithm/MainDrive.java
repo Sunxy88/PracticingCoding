@@ -13,13 +13,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(
-                ListNodeUtil.toStringHelper(
-                        Solution.reverseKGroup(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)), 3)));
+        System.out.println(Solution.findKthNumber(2, 2));
     }
 }
 
 class Solution {
+
+    public static int findKthNumber(int n, int k) {
+        return new LeetCode440().findKthNumber(n, k);
+    }
 
     public static ListNode reverseKGroup(ListNode head, int k) {
         return new LeetCode25().reverseKGroup(head, k);
