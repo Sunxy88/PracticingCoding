@@ -5,10 +5,7 @@ import Algorithm.Solutions.FightForOffer.*;
 import Algorithm.Solutions.LeetCode.*;
 import Algorithm.Solutions.CodeInterview.*;
 import Algorithm.Solutions.LeetCodeCompet.*;
-import Algorithm.Solutions.SortForInterview.InsertSort;
-import Algorithm.Solutions.SortForInterview.MergeSort;
-import Algorithm.Solutions.SortForInterview.QuickSort;
-import Algorithm.Solutions.SortForInterview.ShellSort;
+import Algorithm.Solutions.SortForInterview.*;
 import Algorithm.UsefulDataStructure.*;
 import Algorithm.UsefulDataStructure.utils.*;
 
@@ -17,7 +14,7 @@ import java.util.*;
 public class MainDrive {
     public static void main(String[] args) {
         int[] ary = new int[] {9, 0, 8, 1, 7, 2, 6, 3, 5, 4};
-        MergeSort.sort(ary);
+        HeapSort.sort(ary);
         System.out.println(Arrays.toString(ary));
     }
 }

@@ -1,5 +1,7 @@
 package Algorithm.Solutions.SortForInterview;
 
+import java.util.Arrays;
+
 public class QuickSort {
 
     public static void sort(int[] ary) {
@@ -22,23 +24,21 @@ public class QuickSort {
         }
 
         int pivot = ary[r];
-        int lessIndex = l - 1;
-
-        for (int i = l; i < r; i++) {
-            if (ary[i] < pivot) {
-                lessIndex += 1;
-                swap(ary, lessIndex, i);
+        int left = l, right = r;
+        while (left < right) {
+            while (left < right && ary[left] <= pivot) {
+                left++;
             }
+            ary[right] = ary[left];
+
+            while (left < right && ary[right] >= pivot) {
+                right--;
+            }
+            ary[left] = ary[right];
         }
+        ary[right] = pivot;
 
-        swap(ary, lessIndex + 1, r);
-        return lessIndex + 1;
-    }
-
-    private static void swap(int[] ary, int x, int y) {
-        int t = ary[x];
-        ary[x] = ary[y];
-        ary[y] = t;
+        return right;
     }
 }
 
