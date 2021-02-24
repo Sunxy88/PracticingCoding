@@ -1,7 +1,5 @@
 package Algorithm.Solutions.SortForInterview;
 
-import java.util.Arrays;
-
 public class QuickSort {
 
     public static void sort(int[] ary) {
