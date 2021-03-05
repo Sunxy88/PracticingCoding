@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(RedEnvelope.hongbao(100, 5));
+        System.out.println(Arrays.toString(Solution.nextGreaterElements(new int[]{1, 2, 1})));
     }
 }
 
 class Solution {
+
+    public static int[] nextGreaterElements(int[] nums) {
+        return new LeetCode503().nextGreaterElements(nums);
+    }
 
     public static int findKthNumber(int n, int k) {
         return new LeetCode440().findKthNumber(n, k);
