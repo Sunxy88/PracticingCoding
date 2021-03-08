@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution.nextGreaterElements(new int[]{1, 2, 1})));
+        System.out.println(Solution.findKthPositive(new int[]{1, 2, 3, 4}, 2));
     }
 }
 
 class Solution {
+
+    public static int findKthPositive(int[] arr, int k) {
+        return new LeetCode1539().findKthPositive(arr, k);
+    }
 
     public static int[] nextGreaterElements(int[] nums) {
         return new LeetCode503().nextGreaterElements(nums);
