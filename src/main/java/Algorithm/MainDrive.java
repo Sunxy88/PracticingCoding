@@ -14,7 +14,7 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findKthPositive(new int[]{1, 2, 3, 4}, 2));
+        System.out.println(Solution.calculate("-2+1"));
     }
 }
 
