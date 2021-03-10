@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.calculate("-2+1"));
+        System.out.println(Solution.calculate("-2+2*2"));
     }
 }
 
 class Solution {
+
+    public static int calculate(String s) {
+        return new LeetCode227().calculate(s);
+    }
 
     public static int findKthPositive(int[] arr, int k) {
         return new LeetCode1539().findKthPositive(arr, k);
@@ -815,9 +819,9 @@ class Solution {
         return new LeetCode287().findDuplicate(nums);
     }
 
-    public static int calculate(String s) {
-        return new LeetCode224().calculate(s);
-    }
+//    public static int calculate(String s) {
+//        return new LeetCode224().calculate(s);
+//    }
 
     public static int evalRPN(String[] tokens) {
         return new LeetCode150().evalRPN(tokens);

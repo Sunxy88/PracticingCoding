@@ -92,9 +92,6 @@ public class Tencent3 {
         ary[j] = t;
     }
 
-
-
-
     public static void bfs() {
         int[] bucket = new int[] {8, 0, 0};
         int[] LIMIT = new int[] {8, 5, 3};
