@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.calculate("-2+2*2"));
+        System.out.println(Solution.isValidSerialization("9,3,4,#,1,#,#,2,#,6,#,#"));
     }
 }
 
 class Solution {
+
+    public static boolean isValidSerialization(String preorder) {
+        return new LeetCode331().isValidSerialization(preorder);
+    }
 
     public static int calculate(String s) {
         return new LeetCode227().calculate(s);
