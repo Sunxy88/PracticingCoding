@@ -14,11 +14,19 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.isValidSerialization("9,3,4,#,1,#,#,2,#,6,#,#"));
+        System.out.println(Solution.spiralOrder(new int[][]{
+                {1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12}
+        }));
     }
 }
 
 class Solution {
+
+    public static List<Integer> spiralOrder(int[][] matrix) {
+        return new LeetCode54().spiralOrder(matrix);
+    }
 
     public static boolean isValidSerialization(String preorder) {
         return new LeetCode331().isValidSerialization(preorder);
@@ -371,9 +379,9 @@ class Solution {
         return new LeetCode463().islandPerimeter(grid);
     }
 
-    public static int[] spiralOrder(int[][] matrix) {
-        return new offer29().spiralOrder(matrix);
-    }
+//    public static int[] spiralOrder(int[][] matrix) {
+//        return new offer29().spiralOrder(matrix);
+//    }
 
     public static boolean uniqueOccurrences(int[] arr) {
         return new LeetCode1207().uniqueOccurrences(arr);
