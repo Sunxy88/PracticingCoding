@@ -14,15 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.spiralOrder(new int[][]{
-                {1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12}
-        }));
+        System.out.println(Solution.minFlips(5, 2, 8));
     }
 }
 
 class Solution {
+
+    public static int minFlips(int a, int b, int c) {
+        return new LeetCode1318().minFlips(a, b, c);
+    }
 
     public static List<Integer> spiralOrder(int[][] matrix) {
         return new LeetCode54().spiralOrder(matrix);
