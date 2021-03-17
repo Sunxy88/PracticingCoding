@@ -14,11 +14,16 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.maximumScore(new int[]{1, 2, 3}, new int[]{3, 2, 1}));
+        ListNode head = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4 ,5));
+        System.out.println(ListNodeUtil.toStringHelper(Solution.reverseBetween(head, 2, 4)));
     }
 }
 
 class Solution {
+
+    public static ListNode reverseBetween(ListNode head, int left, int right) {
+        return new LeetCode92().reverseBetween(head, left, right);
+    }
 
     public static int maximumScore(int[] nums, int[] multipliers) {
         return new LeetCode1770().maximumScore(nums, multipliers);
