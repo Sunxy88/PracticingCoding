@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.minFlips(5, 2, 8));
+        System.out.println(Solution.maximumScore(new int[]{1, 2, 3}, new int[]{3, 2, 1}));
     }
 }
 
 class Solution {
+
+    public static int maximumScore(int[] nums, int[] multipliers) {
+        return new LeetCode1770().maximumScore(nums, multipliers);
+    }
 
     public static int minFlips(int a, int b, int c) {
         return new LeetCode1318().minFlips(a, b, c);
