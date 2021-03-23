@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.hammingWeight(3));
+        System.out.println(Solution.find132pattern(new int[]{1, 0, 1, -4, -3}));
     }
 }
 
 class Solution {
+
+    public static boolean find132pattern(int[] nums) {
+        return new LeetCode456().find132pattern(nums);
+    }
 
     public static int hammingWeight(int n) {
         return new LeetCode191().hammingWeight(n);
