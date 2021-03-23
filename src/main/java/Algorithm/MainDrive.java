@@ -14,12 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        ListNode head = ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4 ,5));
-        System.out.println(ListNodeUtil.toStringHelper(Solution.reverseBetween(head, 2, 4)));
+        System.out.println(Solution.hammingWeight(3));
     }
 }
 
 class Solution {
+
+    public static int hammingWeight(int n) {
+        return new LeetCode191().hammingWeight(n);
+    }
 
     public static ListNode reverseBetween(ListNode head, int left, int right) {
         return new LeetCode92().reverseBetween(head, left, right);
@@ -957,9 +960,9 @@ class Solution {
         return new offer14q2().cuttingRope(n);
     }
 
-    public static int hammingWeight(int n) {
-        return new offer15().hammingWeight(n);
-    }
+//    public static int hammingWeight(int n) {
+//        return new offer15().hammingWeight(n);
+//    }
 
     public static boolean verifyPostorder(int[] postorder) {
         return new offer33().verifyPostorder(postorder);
