@@ -18,17 +18,17 @@ public class LeetCode456 {
             rightAll.put(nums[i], rightAll.getOrDefault(nums[i], 0) + 1);
         }
 
-        for (int i = 0; i < len - 1; i++) {
-            if (leftMin < nums[i]) {
+        for (int j = 1; j < len - 1; ++j) {
+            if (leftMin < nums[j]) {
                 Integer next = rightAll.ceilingKey(leftMin + 1);
-                if (next != null && next < nums[i]) {
+                if (next != null && next < nums[j]) {
                     return true;
                 }
             }
-            leftMin = nums[i];
-            rightAll.put(nums[i + 1], rightAll.get(nums[i + 1] - 1));
-            if (rightAll.get(nums[i + 1]) == 0) {
-                rightAll.remove(nums[i + 1]);
+            leftMin = Math.min(leftMin, nums[j]);
+            rightAll.put(nums[j + 1], rightAll.get(nums[j + 1]) - 1);
+            if (rightAll.get(nums[j + 1]) == 0) {
+                rightAll.remove(nums[j + 1]);
             }
         }
 
