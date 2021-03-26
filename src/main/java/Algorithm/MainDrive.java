@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.find132pattern(new int[]{1,2, 3, 4}));
+        System.out.println(ListNodeUtil.toStringHelper(Solution.rotateRight(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)), 2)));
     }
 }
 
 class Solution {
+
+    public static ListNode rotateRight(ListNode head, int k) {
+        return new LeetCode61().rotateRight(head, k);
+    }
 
     public static boolean find132pattern(int[] nums) {
         return new LeetCode456().find132pattern(nums);
