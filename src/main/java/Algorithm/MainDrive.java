@@ -14,11 +14,14 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(ListNodeUtil.toStringHelper(Solution.rotateRight(ListNodeUtil.generateListNode(Arrays.asList(1, 2, 3, 4, 5)), 2)));
+
     }
 }
 
 class Solution {
+    public static int findMin(int[] nums) {
+        return new LeetCode153().findMin(nums);
+    }
 
     public static ListNode rotateRight(ListNode head, int k) {
         return new LeetCode61().rotateRight(head, k);
@@ -675,9 +678,9 @@ class Solution {
 //        return new LeetCode387().firstUniqChar(s);
 //    }
 
-    public static int findMin(int[] nums) {
-        return new LeetCode154().findMin(nums);
-    }
+//    public static int findMin(int[] nums) {
+//        return new LeetCode154().findMin(nums);
+//    }
 
 //    public static int[] twoSum(int[] numbers, int target) {
 //        return new LeetCode167().twoSum(numbers, target);
