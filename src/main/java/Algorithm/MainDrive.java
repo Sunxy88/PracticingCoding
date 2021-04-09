@@ -14,11 +14,16 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-
+        System.out.println(Solution.findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
     }
 }
 
 class Solution {
+
+    public static int findTargetSumWays(int[] nums, int S) {
+        return new LeetCode494().findTargetSumWays(nums, S);
+    }
+
     public static int findMin(int[] nums) {
         return new LeetCode153().findMin(nums);
     }
