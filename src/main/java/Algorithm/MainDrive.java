@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3));
+        System.out.println(Solution.subarraySum(new int[]{1, 1, 1}, 2));
     }
 }
 
 class Solution {
+
+    public static int subarraySum(int[] nums, int k) {
+        return new LeetCode560().subarraySum(nums, k);
+    }
 
     public static int findTargetSumWays(int[] nums, int S) {
         return new LeetCode494().findTargetSumWays(nums, S);
