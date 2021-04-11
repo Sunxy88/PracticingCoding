@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.subarraySum(new int[]{1, 1, 1}, 2));
+        System.out.println(Solution.largestNumber(new int[]{10, 2}));
     }
 }
 
 class Solution {
+
+    public static String largestNumber(int[] nums) {
+        return new LeetCode179().largestNumber(nums);
+    }
 
     public static int subarraySum(int[] nums, int k) {
         return new LeetCode560().subarraySum(nums, k);
