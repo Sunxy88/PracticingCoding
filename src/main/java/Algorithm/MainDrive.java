@@ -14,7 +14,6 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.largestNumber(new int[]{10, 2}));
     }
 }
 
