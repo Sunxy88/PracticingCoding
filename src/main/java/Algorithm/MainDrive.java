@@ -14,10 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
+        System.out.println(Solution.judgeSquareSum(1));
     }
 }
 
 class Solution {
+
+    public static boolean judgeSquareSum(int c) {
+        return new LeetCode633().judgeSquareSum(c);
+    }
 
     public static String largestNumber(int[] nums) {
         return new LeetCode179().largestNumber(nums);
