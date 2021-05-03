@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.judgeSquareSum(1));
+        System.out.println(Solution.reverse(-1234567891));
     }
 }
 
 class Solution {
+
+    public static int reverse(int x) {
+        return new LeetCode7().reverse(x);
+    }
 
     public static boolean judgeSquareSum(int c) {
         return new LeetCode633().judgeSquareSum(c);
