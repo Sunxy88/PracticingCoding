@@ -14,11 +14,16 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.reverse(-1234567891));
+        System.out.println(Solution.romanToInt("IV"));
     }
 }
 
 class Solution {
+
+    public static int romanToInt(String s) {
+        return new LeetCode13().romanToInt(s);
+    }
+
 
     public static int reverse(int x) {
         return new LeetCode7().reverse(x);
