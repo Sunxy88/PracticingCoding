@@ -20,6 +20,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static int[] maximizeXor(int[] nums, int[][] queries) {
+        return new LeetCode1707().maximizeXor(nums, queries);
+    }
+
     public static int romanToInt(String s) {
         return new LeetCode13().romanToInt(s);
     }
