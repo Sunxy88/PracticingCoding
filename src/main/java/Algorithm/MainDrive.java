@@ -14,11 +14,15 @@ import java.util.*;
 
 public class MainDrive {
     public static void main(String[] args) {
-        System.out.println(Solution.romanToInt("IV"));
+        System.out.println(Solution.findPaths(1, 3, 3, 0, 1));
     }
 }
 
 class Solution {
+
+    public static int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
+        return new LeetCode576().findPaths(m, n, maxMove, startRow, startColumn);
+    }
 
     public static int[] maximizeXor(int[] nums, int[][] queries) {
         return new LeetCode1707().maximizeXor(nums, queries);
