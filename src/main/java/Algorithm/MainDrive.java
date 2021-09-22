@@ -20,6 +20,10 @@ public class MainDrive {
 
 class Solution {
 
+    public static ListNode[] splitListToParts(ListNode head, int k) {
+        return new LeetCode725().splitListToParts(head, k);
+    }
+
     public static int findPaths(int m, int n, int maxMove, int startRow, int startColumn) {
         return new LeetCode576().findPaths(m, n, maxMove, startRow, startColumn);
     }
